@@ -509,11 +509,19 @@ def collect_rcl(src, conf, known):
     """Projekty aktów w RCL (legislacja.gov.pl): wyszukiwanie po słowach w tytule, lista posortowana od najnowszych."""
     since = (TODAY - dt.timedelta(days=src.get('days', 240))).isoformat()
     seen, out = set(), []
+    ok = fails = 0
     for q in src['queries']:
         try:
             text, base = fetch(src['url'] + urllib.parse.quote(q))
+            ok += 1
         except Exception as e:
             log(f'   ! {q}: {e}')
+            fails += 1
+            # serwer RCL bywa niedostępny z serwerów GitHuba (każde zapytanie czeka ponad minutę);
+            # gdy dwa pierwsze zapytania nie przeszły, pomijamy resztę zamiast przekroczyć limit czasu przebiegu
+            if ok == 0 and fails >= 2:
+                log(f'   ! RCL nie odpowiada — pomijam pozostałe zapytania ({len(src["queries"]) - fails})')
+                break
             continue
         for row in re.findall(r'<tr[^>]*>([\s\S]*?)</tr\s*>', text):
             pm = re.search(r'href="(/projekt/\d+)"[^>]*>([\s\S]*?)</a>', row)
