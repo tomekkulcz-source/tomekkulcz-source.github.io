@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>BHP Audyt</title>
+<style>
+  :root{--bg:#f6f7f9;--card:#fff;--ink:#1d2430;--muted:#5b6575;--line:#dde2e9}
+  @media (prefers-color-scheme:dark){:root{--bg:#14181f;--card:#1c222b;--ink:#e8ecf2;--muted:#9aa5b5;--line:#2c3440}}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;padding:16px;box-sizing:border-box}
+  .c{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px;max-width:440px}
+  h1{font-size:20px;margin:0 0 8px}
+  p{margin:0;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="c">
+  <h1>BHP Audyt</h1>
+  <p>Aplikacja jest dostępna tylko dla zaproszonych użytkowników. Kody QR z instrukcji, formularz zgłoszeń i test wiedzy działają bez zmian.</p>
+</div>
+<script>
+  // usuń zapisaną kopię dawnej wersji aplikacji (service worker), jeśli była zainstalowana
+  if ('serviceWorker' in navigator) navigator.serviceWorker.getRegistrations().then(rs => rs.forEach(r => r.unregister())).catch(() => {});
+  if (window.caches) caches.keys().then(ns => ns.forEach(n => caches.delete(n))).catch(() => {});
+</script>
+</body>
+</html>

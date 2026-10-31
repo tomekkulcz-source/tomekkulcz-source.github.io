@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Instrukcja BHP</title>
+<style>
+  :root{--bg:#f6f5f2;--card:#fff;--ink:#1d1c1a;--soft:#5b5852;--line:#e3e0d9;--acc:#c2410c;--acc-soft:#fdeee5;}
+  @media (prefers-color-scheme: dark){:root{--bg:#161514;--card:#201f1d;--ink:#f1efe9;--soft:#b3afa6;--line:#35332f;--acc:#fb923c;--acc-soft:#3a2416;}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;-webkit-text-size-adjust:100%}
+  main{max-width:720px;margin:0 auto;padding:16px 16px 48px}
+  .kick{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--acc);background:var(--acc-soft);padding:3px 9px;border-radius:99px}
+  h1{font-size:24px;line-height:1.25;margin:10px 0 6px;text-wrap:balance}
+  .meta{color:var(--soft);font-size:14px;display:flex;flex-wrap:wrap;gap:4px 14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:14px}
+  h2{font-size:17px;margin:0 0 8px}
+  ol{margin:0;padding:0;list-style:none;counter-reset:p}
+  li{position:relative;padding-left:44px;margin:7px 0}
+  li .n{position:absolute;left:0;top:0;font-variant-numeric:tabular-nums;color:var(--soft);font-size:14px}
+  .tel a{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}
+  .tel a:first-child{border-top:0}
+  .tel b{color:var(--acc);white-space:nowrap}
+  .foot{color:var(--soft);font-size:13px;margin-top:18px}
+  .short{margin-top:14px;padding:10px 14px;border-radius:12px;background:var(--acc-soft);font-size:14px}
+  .more{color:var(--soft);font-size:13px;margin-top:6px;padding-left:44px}
+  .err{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:30px}
+</style>
+</head>
+<body>
+<main id="app"><div class="err">Wczytywanie…</div></main>
+<script>
+(async function(){
+  const app = document.getElementById('app');
+  const esc = s=>String(s==null?'':s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const fmt = d=>/^\d{4}-\d{2}-\d{2}$/.test(d||'') ? d.slice(8,10)+'.'+d.slice(5,7)+'.'+d.slice(0,4) : '';
+  function bytes(b64){ b64 = b64.replace(/-/g,'+').replace(/_/g,'/'); while(b64.length%4) b64 += '='; const s = atob(b64), u = new Uint8Array(s.length); for(let i=0;i<s.length;i++) u[i] = s.charCodeAt(i); return u; }
+  async function unpack(h){
+    const kind = h[0], data = bytes(h.slice(1));
+    let raw = data;
+    if(kind==='z'){
+      if(typeof DecompressionStream==='undefined') throw new Error('Ta przeglądarka jest za stara, żeby otworzyć kod. Zaktualizuj system telefonu albo użyj innej przeglądarki.');
+      raw = new Uint8Array(await new Response(new Blob([data]).stream().pipeThrough(new DecompressionStream('deflate-raw'))).arrayBuffer());
+    }
+    return JSON.parse(new TextDecoder().decode(raw));
+  }
+  try{
+    const h = decodeURIComponent(location.hash.slice(1));
+    if(!h) throw new Error('Brak treści w kodzie. Zeskanuj kod ponownie.');
+    const d = await unpack(h);
+    if(d.k!=='ins') throw new Error('Nieznany rodzaj kodu.');
+    document.title = d.t || 'Instrukcja BHP';
+    app.innerHTML = '<span class="kick">Instrukcja BHP</span><h1>'+esc(d.t)+'</h1>'
+      +'<div class="meta">'+[d.c, d.n?'nr '+d.n:'', d.d?'wprowadzona '+fmt(d.d):'', d.r?'przegląd '+fmt(d.r):''].filter(Boolean).map(x=>'<span>'+esc(x)+'</span>').join('')+'</div>'
+      +(d.sk ? '<div class="short">To skrót instrukcji — najważniejsze punkty: środki ochrony, czynności przed pracą, czynności zabronione i postępowanie w sytuacjach awaryjnych. Pełna treść jest wywieszona na stanowisku pracy.</div>' : '')
+      +(d.s||[]).map((s,i)=>{ const n = s[3]||(i+1); return '<section><h2>'+n+'. '+esc(s[0])+'</h2><ol>'+(s[1]||[]).map((p,j)=>'<li><span class="n">'+n+'.'+(j+1)+'</span>'+esc(p)+'</li>').join('')+'</ol>'+(s[2] ? '<div class="more">… oraz '+s[2]+' '+(s[2]===1?'punkt':(s[2]%10>=2&&s[2]%10<=4&&(s[2]%100<10||s[2]%100>=20)?'punkty':'punktów'))+' w pełnej instrukcji</div>' : '')+'</section>'; }).join('')
+      +((d.ph||[]).length ? '<section class="tel"><h2>Telefony alarmowe</h2>'+d.ph.map(t=>{ const k = t.indexOf(':'); const lbl = k>0 ? t.slice(0,k) : t, num = k>0 ? t.slice(k+1).trim() : ''; const dial = num.replace(/[^\d+]/g,''); return dial ? '<a href="tel:'+esc(dial)+'"><span>'+esc(lbl)+'</span><b>'+esc(num)+'</b></a>' : '<a><span>'+esc(t)+'</span></a>'; }).join('')+'</section>' : '')
+      +'<p class="foot">Treść zapisana w kodzie QR w dniu utworzenia kodu. W razie wątpliwości obowiązuje wersja instrukcji wywieszona na stanowisku pracy. Instrukcję wydaje pracodawca na podstawie art. 237⁴ § 2 Kodeksu pracy.</p>';
+  }catch(e){
+    app.innerHTML = '<div class="err"><b>Nie udało się otworzyć instrukcji.</b><br>'+esc(e.message||e)+'</div>';
+  }
+})();
+</script>
+</body>
+</html>

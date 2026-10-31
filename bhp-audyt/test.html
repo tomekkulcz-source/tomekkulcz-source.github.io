@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Test wiedzy BHP</title>
+<style>
+  :root{--bg:#f4f6f8;--card:#fff;--ink:#16191d;--soft:#566170;--line:#d7dde4;--acc:#0a62d0;--acc-ink:#fff;--ok:#146b3a;--ok-bg:#e6f4ec;--bad:#b4232c;--bad-bg:#fbeaea;}
+  @media (prefers-color-scheme: dark){:root{--bg:#111316;--card:#1b1e23;--ink:#eef1f4;--soft:#a9b2bd;--line:#2f353d;--acc:#4ea1ff;--acc-ink:#0d1014;--ok:#6ee7a0;--ok-bg:#12291c;--bad:#fca5a5;--bad-bg:#2e1416;}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;-webkit-text-size-adjust:100%}
+  main{max-width:680px;margin:0 auto;padding:16px 16px 48px}
+  .top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .kick{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--acc)}
+  .langs{display:flex;gap:4px}
+  .langs button{font:inherit;font-size:13px;padding:4px 9px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+  .langs button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  h1{font-size:24px;line-height:1.25;margin:10px 0 2px;text-wrap:balance}
+  .cl{color:var(--soft);font-size:14px}
+  label{display:flex;flex-direction:column;gap:6px;font-weight:600;margin-top:12px}
+  input{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:11px 12px;width:100%;min-width:0}
+  .q{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:12px}
+  .q h2{font-size:16px;margin:0 0 10px;font-weight:600}
+  .q .n{color:var(--soft);font-variant-numeric:tabular-nums;margin-right:6px}
+  .a{display:flex;flex-direction:row;gap:10px;align-items:flex-start;padding:9px 10px;border:1px solid var(--line);border-radius:10px;margin-top:6px;font-weight:400}
+  .a input{width:20px;height:20px;padding:0;margin:2px 0 0;flex:0 0 auto;accent-color:var(--acc)}
+  .a.ok{background:var(--ok-bg);border-color:var(--ok)}
+  .a.bad{background:var(--bad-bg);border-color:var(--bad)}
+  button.main{font:inherit;font-weight:700;background:var(--acc);color:var(--acc-ink);border:0;border-radius:12px;padding:14px;font-size:17px;width:100%;margin-top:16px}
+  button.sec{font:inherit;background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:12px;width:100%;margin-top:8px}
+  .res{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:16px}
+  .score{font-size:40px;font-weight:800;font-variant-numeric:tabular-nums}
+  .pass{color:var(--ok)} .fail{color:var(--bad)}
+  .note{color:var(--soft);font-size:13px}
+  .err{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:30px}
+  :focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+</style>
+</head>
+<body>
+<main id="app"><div class="err">…</div></main>
+<script>
+(async function(){
+  /* Bank pytań: [treść, odp.0, odp.1, odp.2], ok = indeks poprawnej. A — ogólne (wszyscy), B — stanowiska robotnicze, C — biurowe.
+     Podstawy: art. 210 § 1, 211, 237³ § 2–3, 237⁶, 237⁹ KP; rozp. MPiPS z 1.12.1998 r. (monitory, § 7–8, zał. pkt 1.2, 2.2, 5.1); rozp. MRPiPS z 14.03.2018 r. (ręczne prace transportowe). */
+  const QB = {
+    A:[
+      {ok:0, pl:['Zauważasz w zakładzie wypadek albo zagrożenie życia lub zdrowia. Co robisz?','Niezwłocznie zawiadamiam przełożonego i ostrzegam osoby w rejonie zagrożenia','Zgłaszam to na najbliższym szkoleniu okresowym BHP, żeby wszyscy się dowiedzieli','Opisuję zdarzenie i oddaję notatkę do kadr na koniec dnia'],
+        en:['You notice an accident or a danger to life or health at work. What do you do?','I tell my supervisor immediately and warn people in the danger area','I mention it at the next periodic safety training so that everyone learns about it','I write it down and hand the note to HR at the end of the day'],
+        uk:['Ви помітили на підприємстві нещасний випадок або загрозу життю чи здоров’ю. Що робите?','Негайно повідомляю керівника й попереджаю людей у зоні небезпеки','Розповідаю про це на найближчому періодичному навчанні, щоб усі дізналися','Записую подію і в кінці дня віддаю записку у відділ кадрів']},
+      {ok:1, pl:['Środki ochrony indywidualnej (np. rękawice, kask) pracodawca dostarcza:','za częściową odpłatnością pracownika','nieodpłatnie','tylko na pisemny wniosek pracownika'],
+        en:['Personal protective equipment (e.g. gloves, helmet) is provided by the employer:','with a partial payment from the worker','free of charge','only at the worker’s written request'],
+        uk:['Засоби індивідуального захисту (напр. рукавиці, каска) роботодавець надає:','з частковою оплатою працівником','безкоштовно','лише за письмовою заявою працівника']},
+      {ok:2, pl:['Kiedy pracownik ma prawo powstrzymać się od wykonywania pracy?','Gdy praca jest uciążliwa lub monotonna, nawet jeśli jest zgodna z przepisami i bezpieczna','Tylko wtedy, gdy na odmowę pracy wcześniej pisemnie zgodzi się inspektor pracy','Gdy warunki pracy naruszają przepisy BHP i bezpośrednio zagrażają jego zdrowiu lub życiu'],
+        en:['When does a worker have the right to refrain from work?','When the work is tiring or monotonous, even though it is legal and safe','Only when a labour inspector has agreed in writing beforehand to the refusal','When conditions breach safety rules and directly threaten their health or life'],
+        uk:['Коли працівник має право утриматися від виконання роботи?','Коли робота втомлива чи монотонна, навіть якщо вона відповідає правилам і безпечна','Лише тоді, коли інспектор праці заздалегідь письмово погодився на відмову від роботи','Коли умови праці порушують правила охорони праці і прямо загрожують його здоров’ю або життю']},
+      {ok:1, pl:['Ogólny numer alarmowy w Polsce i w całej Unii Europejskiej to:','911','112','991'],
+        en:['The general emergency number in Poland and the whole European Union is:','911','112','991'],
+        uk:['Єдиний номер екстреної допомоги в Польщі та в усьому Європейському Союзі:','911','112','991']},
+      {ok:2, pl:['Czym NIE wolno gasić urządzeń elektrycznych pod napięciem?','Gaśnicą proszkową','Gaśnicą śniegową (CO₂)','Wodą'],
+        en:['What must NOT be used to put out live electrical equipment?','A powder extinguisher','A CO₂ extinguisher','Water'],
+        uk:['Чим НЕ можна гасити електрообладнання під напругою?','Порошковим вогнегасником','Вуглекислотним вогнегасником (CO₂)','Водою']},
+      {ok:0, pl:['Drogi i wyjścia ewakuacyjne:','muszą być stale wolne od przeszkód','mogą być zastawione, jeśli w pobliżu jest inne wyjście','mogą służyć do składowania, jeśli są oznakowane'],
+        en:['Escape routes and emergency exits:','must always be kept free of obstacles','may be blocked if there is another exit nearby','may be used for storage if they are marked'],
+        uk:['Евакуаційні шляхи та виходи:','мають завжди бути вільними від перешкод','можна заставити, якщо поруч є інший вихід','можна використовувати для зберігання, якщо вони позначені']},
+      {ok:1, pl:['Czy można rozpocząć pracę bez szkolenia wstępnego BHP?','Tak, przez pierwszy miesiąc zatrudnienia, jeśli pracuje pod okiem doświadczonego kolegi','Nie — pracodawca musi przeszkolić pracownika przed dopuszczeniem do pracy','Tak, jeśli pracownik ma doświadczenie z innej firmy'],
+        en:['Can you start work without initial safety training?','Yes, for the first month of employment, if an experienced colleague keeps an eye on them','No — the employer must train the worker before they start work','Yes, if the worker has experience from another company'],
+        uk:['Чи можна почати роботу без вступного навчання з охорони праці?','Так, протягом першого місяця роботи, якщо за ним наглядає досвідчений колега','Ні — роботодавець має навчити працівника до допуску до роботи','Так, якщо працівник має досвід з іншої фірми']},
+      {ok:0, pl:['Szkolenia BHP odbywają się:','w czasie pracy i na koszt pracodawcy','poza godzinami pracy i na koszt pracownika','w czasie pracy, ale koszt dzieli się po połowie'],
+        en:['Safety training takes place:','during working hours and at the employer’s expense','after working hours and at the worker’s expense','during working hours, with the cost split in half'],
+        uk:['Навчання з охорони праці проводиться:','у робочий час і за рахунок роботодавця','поза робочим часом і за рахунок працівника','у робочий час, а витрати діляться навпіл']},
+      {ok:2, pl:['Osobę nieprzytomną, która prawidłowo oddycha, należy:','posadzić i podać jej wodę do picia','zostawić na plecach, unieść jej nogi i czekać na powrót przytomności','ułożyć w pozycji bezpiecznej i stale kontrolować oddech'],
+        en:['An unconscious person who is breathing normally should be:','sat up and given water to drink','left on their back with legs raised until they regain consciousness','placed in the recovery position, with breathing checked all the time'],
+        uk:['Непритомну людину, яка нормально дихає, слід:','посадити й дати їй попити води','залишити на спині, підняти їй ноги й чекати, поки опритомніє','покласти в стабільне бокове положення й постійно контролювати дихання']},
+      {ok:1, pl:['Resuscytacja dorosłego: stosunek uciśnięć klatki piersiowej do oddechów ratowniczych to:','15 : 2','30 : 2','5 : 1'],
+        en:['Adult CPR: the ratio of chest compressions to rescue breaths is:','15 : 2','30 : 2','5 : 1'],
+        uk:['Серцево-легенева реанімація дорослого: співвідношення натискань на грудну клітку до вдихів:','15 : 2','30 : 2','5 : 1']},
+      {ok:0, pl:['Pracownik przyszedł do pracy po spożyciu alkoholu. Co się stanie?','Nie zostanie dopuszczony do pracy','Może pracować, jeśli dobrze się czuje','Może pracować, ale tylko przy lżejszych zadaniach'],
+        en:['A worker comes to work after drinking alcohol. What happens?','They will not be allowed to work','They may work if they feel fine','They may work, but only on lighter tasks'],
+        uk:['Працівник прийшов на роботу після вживання алкоголю. Що буде?','Його не допустять до роботи','Він може працювати, якщо добре почувається','Він може працювати, але лише на легших завданнях']},
+      {ok:2, pl:['Przydzielone środki ochrony indywidualnej należy:','zakładać tylko w obecności przełożonego lub podczas kontroli BHP','przerabiać, żeby były wygodniejsze','używać zgodnie z przeznaczeniem i zgłaszać ich uszkodzenie'],
+        en:['Personal protective equipment you are given should be:','worn only when your supervisor is present or during a safety inspection','altered to make it more comfortable','used as intended, and any damage reported'],
+        uk:['Видані засоби індивідуального захисту слід:','одягати лише в присутності керівника або під час перевірки з охорони праці','переробляти, щоб були зручнішими','використовувати за призначенням і повідомляти про їх пошкодження']}
+    ],
+    B:[
+      {ok:1, pl:['Przed czyszczeniem maszyny lub usuwaniem zacięcia należy:','zmniejszyć prędkość maszyny do minimum i pracować bardzo ostrożnie','zatrzymać maszynę i zabezpieczyć ją przed przypadkowym uruchomieniem','poprosić drugą osobę, żeby obserwowała maszynę i w razie czego ją wyłączyła'],
+        en:['Before cleaning a machine or clearing a jam you should:','reduce the machine speed to a minimum and work very carefully','stop the machine and secure it against accidental start-up','ask another person to watch the machine and switch it off if needed'],
+        uk:['Перед чищенням машини або усуненням заклинювання слід:','зменшити швидкість машини до мінімуму й працювати дуже обережно','зупинити машину й захистити її від випадкового запуску','попросити іншу людину наглядати за машиною й за потреби її вимкнути']},
+      {ok:0, pl:['Osłony i urządzenia zabezpieczające maszyn:','nie wolno ich usuwać ani wyłączać','można zdjąć, jeśli spowalniają pracę','wolno wyłączyć, gdy pracuje doświadczony operator'],
+        en:['Machine guards and safety devices:','must not be removed or switched off','may be removed if they slow the work down','may be switched off when an experienced operator works'],
+        uk:['Захисні огородження та запобіжні пристрої машин:','не можна знімати чи вимикати','можна зняти, якщо вони сповільнюють роботу','можна вимкнути, коли працює досвідчений оператор']},
+      {ok:2, pl:['Wózek widłowy z napędem silnikowym może obsługiwać:','każdy pracownik magazynu po krótkim pokazie przez doświadczonego operatora','każdy, kto ma prawo jazdy kategorii B','osoba z wymaganymi uprawnieniami i upoważnieniem pracodawcy'],
+        en:['A powered forklift truck may be operated by:','any warehouse worker after a short demonstration by an experienced operator','anyone with a category B driving licence','a person with the required qualification and the employer’s authorisation'],
+        uk:['Навантажувачем з двигуном може керувати:','будь-який працівник складу після короткого показу досвідченим оператором','кожен, хто має посвідчення водія категорії B','особа з необхідними кваліфікаційними документами та дозволом роботодавця']},
+      {ok:0, pl:['Największa masa przedmiotu, który mężczyzna może przenosić przy pracy stałej, to:','30 kg','50 kg','40 kg'],
+        en:['The maximum weight a man may carry when doing it as regular work is:','30 kg','50 kg','40 kg'],
+        uk:['Найбільша маса предмета, яку чоловік може переносити при постійній роботі:','30 кг','50 кг','40 кг']},
+      {ok:1, pl:['Jak podnosić ładunek z podłogi?','Na wyprostowanych nogach, pochylając plecy nad ładunkiem i chwytając go oburącz','Ugiętymi nogami, z prostymi plecami, trzymając ładunek blisko ciała','Szybkim szarpnięciem, żeby skrócić wysiłek'],
+        en:['How should you lift a load from the floor?','With straight legs, bending your back over the load and gripping it with both hands','With bent knees and a straight back, holding the load close to your body','With a quick jerk, to make the effort shorter'],
+        uk:['Як піднімати вантаж з підлоги?','На прямих ногах, нахиляючи спину над вантажем і хапаючи його обома руками','Зігнувши ноги, з прямою спиною, тримаючи вантаж близько до тіла','Різким ривком, щоб скоротити зусилля']},
+      {ok:2, pl:['W strefie oznakowanej nakazem stosowania ochronników słuchu:','zakładam je tylko przy najgłośniejszych pracach','wystarczą słuchawki z muzyką','stosuję je przez cały czas przebywania w strefie'],
+        en:['In an area marked “hearing protection must be worn”:','I wear it only during the loudest jobs','headphones with music are enough','I wear it the whole time I am in the area'],
+        uk:['У зоні зі знаком «обов’язково використовувати засоби захисту органів слуху»:','одягаю їх лише під час найгучніших робіт','достатньо навушників з музикою','використовую їх увесь час перебування в зоні']},
+      {ok:0, pl:['Informacje o zagrożeniach i bezpiecznym stosowaniu substancji chemicznej znajdziesz przede wszystkim:','w karcie charakterystyki i na etykiecie','na fakturze zakupu substancji','w instrukcji obsługi wózka widłowego'],
+        en:['Information about the hazards and safe use of a chemical is found mainly:','in the safety data sheet and on the label','on the purchase invoice','in the forklift operating manual'],
+        uk:['Інформацію про небезпеку та безпечне використання хімічної речовини знайдете передусім:','у паспорті безпеки та на етикетці','у рахунку-фактурі за покупку','в інструкції з експлуатації навантажувача']},
+      {ok:1, pl:['Na stanowisku pracy z substancjami chemicznymi:','można jeść, jeśli opakowania są zamknięte','nie wolno jeść ani pić','można palić, jeśli działa wentylacja'],
+        en:['At a workstation where chemicals are used:','you may eat if the containers are closed','eating and drinking are not allowed','you may smoke if the ventilation is on'],
+        uk:['На робочому місці з хімічними речовинами:','можна їсти, якщо упаковки закриті','не можна їсти й пити','можна курити, якщо працює вентиляція']},
+      {ok:2, pl:['Substancję chemiczną wolno przelać do:','dowolnej pustej butelki po napoju','nieoznakowanego pojemnika, jeśli wszyscy wiedzą, co w nim jest','oryginalnego lub właściwie oznakowanego opakowania'],
+        en:['A chemical may be poured into:','any empty drinks bottle','an unlabelled container if everyone knows what is inside','the original or a correctly labelled container'],
+        uk:['Хімічну речовину можна перелити в:','будь-яку порожню пляшку з-під напою','непозначену ємність, якщо всі знають, що в ній','оригінальну або правильно позначену упаковку']},
+      {ok:0, pl:['Narzędzie elektryczne ma przetarty przewód. Co robisz?','Wyłączam je z użycia i zgłaszam przełożonemu','Owijam przewód taśmą i pracuję dalej','Używam ostrożnie do końca zmiany'],
+        en:['A power tool has a worn cable. What do you do?','I take it out of use and tell my supervisor','I wrap the cable with tape and keep working','I use it carefully until the end of the shift'],
+        uk:['В електроінструмента протертий кабель. Що робите?','Виводжу його з використання й повідомляю керівника','Обмотую кабель стрічкою і працюю далі','Обережно користуюся до кінця зміни']},
+      {ok:1, pl:['Prace szczególnie niebezpieczne (np. w zbiornikach, spawanie w miejscach zagrożonych pożarem) wykonuje się:','samodzielnie i bez dodatkowego nadzoru, jeśli pracownik ma duże doświadczenie','po instruktażu, z zabezpieczeniami i pod nadzorem wyznaczonej osoby','w dowolny sposób, byle zakończyć je przed końcem zmiany'],
+        en:['Particularly dangerous work (e.g. inside tanks, welding where there is a fire risk) is done:','alone and without extra supervision, if the worker is very experienced','after instruction, with safeguards and supervised by an appointed person','in any way, as long as it is finished before the shift ends'],
+        uk:['Особливо небезпечні роботи (напр. у резервуарах, зварювання в пожежонебезпечних місцях) виконують:','самостійно й без додаткового нагляду, якщо працівник має великий досвід','після інструктажу, із захисними заходами та під наглядом призначеної особи','будь-яким способом, аби закінчити до кінця зміни']},
+      {ok:2, pl:['Po zakończeniu pracy:','zostawiam maszynę włączoną dla następnej zmiany','zostawiam odpady i ścinki na stanowisku, bo sprzątają je pracownicy serwisu','porządkuję stanowisko, wyłączam urządzenia i odkładam narzędzia'],
+        en:['When you finish work:','I leave the machine running for the next shift','I leave the waste and offcuts at the workstation, because the cleaning staff remove them','I tidy up, switch off the equipment and put the tools away'],
+        uk:['Після завершення роботи:','залишаю машину ввімкненою для наступної зміни','залишаю відходи й обрізки на робочому місці, бо їх прибирає сервісна служба','прибираю робоче місце, вимикаю обладнання й відкладаю інструменти']}
+    ],
+    C:[
+      {ok:0, pl:['Jeśli praca przy monitorze nie jest przeplatana innymi zajęciami, po każdej godzinie przysługuje:','co najmniej 5-minutowa przerwa wliczana do czasu pracy','15-minutowa przerwa niewliczana do czasu pracy','przerwa tylko na wniosek złożony przełożonemu'],
+        en:['If screen work is not mixed with other tasks, after every hour you are entitled to:','a break of at least 5 minutes, counted as working time','a 15-minute break not counted as working time','a break only if you ask your supervisor'],
+        uk:['Якщо робота з монітором не чергується з іншими заняттями, після кожної години належить:','перерва щонайменше 5 хвилин, що входить у робочий час','15-хвилинна перерва, що не входить у робочий час','перерва лише на прохання до керівника']},
+      {ok:1, pl:['Górna krawędź monitora powinna znajdować się:','wyraźnie powyżej oczu pracownika','na wysokości oczu pracownika','na wysokości blatu biurka'],
+        en:['The top edge of the screen should be:','clearly above the worker’s eyes','at the worker’s eye level','at desk level'],
+        uk:['Верхній край монітора має бути:','помітно вище очей працівника','на рівні очей працівника','на рівні стільниці']},
+      {ok:2, pl:['Okulary korygujące wzrok do pracy przy monitorze pracodawca zapewnia, gdy:','pracownik o nie poprosi, bez badań','pracownik pracuje przy komputerze dłużej niż 5 lat, niezależnie od wyników badań','badania okulistyczne wykażą potrzebę ich stosowania przy tej pracy'],
+        en:['The employer provides corrective glasses for screen work when:','the worker asks for them, without an eye test','the worker has used a computer for more than 5 years, whatever the eye test shows','an eye examination shows they are needed for this work'],
+        uk:['Окуляри для корекції зору для роботи з монітором роботодавець надає, коли:','працівник попросить, без обстеження','працівник працює з комп’ютером понад 5 років, незалежно від результатів обстеження','офтальмологічне обстеження покаже, що вони потрібні для цієї роботи']},
+      {ok:0, pl:['Pracujesz na laptopie co najmniej połowę dnia pracy. Stanowisko powinno mieć:','osobny monitor lub podstawkę pod laptop oraz dodatkową klawiaturę i mysz','tylko podkładkę pod nadgarstki i wygodne krzesło, bez dodatkowych urządzeń','wyłącznie mocniejsze oświetlenie biurka, bo laptop ma własny ekran i klawiaturę'],
+        en:['You use a laptop for at least half of the working day. The workstation should have:','a separate screen or a laptop stand, plus an extra keyboard and mouse','only a wrist rest and a comfortable chair, without any extra devices','only a stronger desk lamp, because the laptop has its own screen and keyboard'],
+        uk:['Ви працюєте на ноутбуці щонайменше половину робочого дня. Робоче місце має мати:','окремий монітор або підставку для ноутбука, а також додаткову клавіатуру й мишу','лише підкладку під зап’ястя і зручний стілець, без додаткових пристроїв','лише яскравіше освітлення стола, бо ноутбук має власний екран і клавіатуру']},
+      {ok:1, pl:['Przewody zasilające w biurze:','można układać luzem w przejściach, jeśli są w jaskrawym kolorze','prowadzi się tak, by nie groziły potknięciem ani uszkodzeniem','można łączyć w długie łańcuchy przedłużaczy, jeśli żaden nie jest uszkodzony'],
+        en:['Power cables in the office:','may lie loose across walkways if they are brightly coloured','are routed so they cause no tripping or damage','may be joined into long chains of extension leads if none is damaged'],
+        uk:['Кабелі живлення в офісі:','можна вільно розкладати в проходах, якщо вони яскравого кольору','прокладають так, щоб не було ризику спіткнутися чи пошкодити їх','можна з’єднувати в довгі ланцюги подовжувачів, якщо жоден не пошкоджений']},
+      {ok:2, pl:['Po segregator z wysokiej półki sięgasz:','stając na krześle obrotowym, jeśli ktoś je przytrzyma','stając na biurku','ze stabilnej drabinki lub podestu'],
+        en:['To reach a file on a high shelf you:','stand on a swivel chair if someone holds it','stand on the desk','use a stable step ladder or platform'],
+        uk:['Щоб дістати папку з високої полиці, ви:','стаєте на обертовий стілець, якщо хтось його притримає','стаєте на стіл','користуєтеся стійкою драбинкою або підставкою']},
+      {ok:0, pl:['Krzesło przy stanowisku z monitorem powinno mieć m.in.:','regulowane siedzisko i oparcie oraz podstawę z co najmniej pięcioma kółkami','sztywne, twarde siedzisko bez regulacji, żeby wymuszało prostą postawę','cztery stabilne nogi bez kółek, żeby krzesło nie odjeżdżało od biurka'],
+        en:['A chair at a screen workstation should have, among other things:','an adjustable seat and backrest and a base with at least five castors','a rigid, hard seat with no adjustment, to force an upright posture','four stable legs without castors, so the chair does not roll away from the desk'],
+        uk:['Стілець на робочому місці з монітором має мати, зокрема:','регульоване сидіння й спинку та опору щонайменше з п’ятьма коліщатками','жорстке, тверде сидіння без регулювання, щоб змушувало сидіти рівно','чотири стійкі ніжки без коліщат, щоб стілець не від’їжджав від стола']},
+      {ok:1, pl:['W biurze wybuchł pożar. Co robisz najpierw?','Najpierw zabieram dokumenty i laptopa, żeby nie spłonęły','Alarmuję osoby w zagrożonym rejonie i wzywam straż pożarną','Otwieram wszystkie okna, żeby szybko wywietrzyć dym z biura'],
+        en:['A fire breaks out in the office. What do you do first?','First I take the documents and my laptop so they do not burn','I alert people in the danger area and call the fire brigade','I open all the windows to get the smoke out of the office quickly'],
+        uk:['В офісі виникла пожежа. Що робите насамперед?','Спершу забираю документи й ноутбук, щоб вони не згоріли','Сповіщаю людей у зоні небезпеки й викликаю пожежну охорону','Відчиняю всі вікна, щоб швидко вивітрити дим з офісу']},
+      {ok:2, pl:['Podczas ewakuacji budynku:','korzystasz z windy, bo jest szybsza niż schody i mniej męcząca','wracasz po rzeczy osobiste, jeśli w twoim pokoju jeszcze nie ma dymu','idziesz oznakowanymi drogami ewakuacyjnymi, nie korzystając z wind'],
+        en:['During a building evacuation:','you use the lift because it is faster and less tiring than the stairs','you go back for your belongings if there is no smoke in your room yet','you follow the marked escape routes and do not use the lifts'],
+        uk:['Під час евакуації з будівлі:','користуєтеся ліфтом, бо він швидший і менш виснажливий, ніж сходи','повертаєтеся по особисті речі, якщо у вашій кімнаті ще немає диму','йдете позначеними евакуаційними шляхами, не користуючись ліфтами']},
+      {ok:0, pl:['Uszkodzony przedłużacz lub czajnik w biurze:','wyłączam z użycia i zgłaszam — naprawia osoba z uprawnieniami','naprawia każdy pracownik, który ma śrubokręt i trochę doświadczenia','używam dalej, jeśli jeszcze działa'],
+        en:['A damaged extension lead or kettle in the office:','I take it out of use and report it — a qualified person repairs it','any worker who has a screwdriver and some experience repairs it','I keep using it while it still works'],
+        uk:['Пошкоджений подовжувач або чайник в офісі:','виводжу з використання й повідомляю — ремонтує особа з допуском','ремонтує будь-який працівник, який має викрутку й трохи досвіду','користуюся далі, поки ще працює']},
+      {ok:1, pl:['Szuflady szafek na dokumenty:','można otwierać kilka naraz, żeby było szybciej','zamykam po użyciu i nie otwieram kilku naraz','mogą zostać otwarte do końca dnia'],
+        en:['Filing cabinet drawers:','may be opened several at a time to work faster','are closed after use and not opened several at once','may stay open until the end of the day'],
+        uk:['Шухляди шаф для документів:','можна відкривати кілька одночасно, щоб було швидше','закриваю після використання й не відкриваю кілька одночасно','можуть залишатися відкритими до кінця дня']},
+      {ok:2, pl:['Przed rozpoczęciem pracy przy komputerze sprawdzasz:','czy kolega obok już włączył swój komputer i zalogował się do systemu','czy telefon służbowy jest naładowany i ma włączony dźwięk','czy przewody i sprzęt są sprawne, a stanowisko wygodnie ustawione'],
+        en:['Before starting computer work you check:','whether the colleague next to you has switched on and logged in','whether your work phone is charged and its sound is on','that cables and equipment are sound and the workstation is set up comfortably'],
+        uk:['Перед початком роботи з комп’ютером перевіряєте:','чи колега поруч уже ввімкнув комп’ютер і увійшов у систему','чи заряджений службовий телефон і чи ввімкнений звук','чи справні кабелі й обладнання і чи зручно налаштоване робоче місце']}
+    ]
+  };
+  const SETS = {ogol:['A'], rob:['A','B'], biu:['A','C']};
+  const T = {
+    pl:{kick:'Test wiedzy BHP', sets:{ogol:'Zasady ogólne', rob:'Stanowiska robotnicze', biu:'Stanowiska administracyjno-biurowe'}, name:'Imię i nazwisko', pos:'Stanowisko', start:'Rozpocznij test', need:'Wpisz imię i nazwisko.', q:'Pytanie', submit:'Zakończ i sprawdź', missing:'Odpowiedz na wszystkie pytania. Brakuje: ', res:'Twój wynik', pass:'Zaliczony', fail:'Niezaliczony — porozmawiaj z prowadzącym szkolenie', send:'Wyślij wynik', copy:'Kopiuj wynik', again:'Rozwiąż ponownie', info:'Test sprawdza wiedzę po szkoleniu BHP. Wynik wysyłasz e-mailem do specjalisty BHP; strona niczego nie zapisuje.', proof:'Wynik testu jest informacją dla prowadzącego szkolenie — egzamin kończący szkolenie okresowe przeprowadza organizator szkolenia.', subj:'Wynik testu BHP', code:'Kod dla aplikacji BHP Audyt (nie usuwaj):', noTo:'Brak adresu w kodzie — skopiuj wynik i przekaż prowadzącemu.', bad:'Nie udało się otworzyć testu. Zeskanuj kod ponownie.', of:'z', passMark:'próg zaliczenia'},
+    en:{kick:'Safety knowledge test', sets:{ogol:'General rules', rob:'Manual / production jobs', biu:'Office jobs'}, name:'Full name', pos:'Job position', start:'Start the test', need:'Enter your full name.', q:'Question', submit:'Finish and check', missing:'Answer all questions. Missing: ', res:'Your score', pass:'Passed', fail:'Not passed — talk to your trainer', send:'Send the result', copy:'Copy the result', again:'Try again', info:'The test checks your knowledge after safety training. You send the result by e-mail to the safety specialist; this page stores nothing.', proof:'The test result is information for the trainer — the final exam of periodic training is held by the training organiser.', subj:'Safety test result', code:'Code for the BHP Audyt app (do not remove):', noTo:'No address in the code — copy the result and give it to your trainer.', bad:'Could not open the test. Scan the code again.', of:'of', passMark:'pass mark'},
+    uk:{kick:'Тест знань з охорони праці', sets:{ogol:'Загальні правила', rob:'Робітничі посади', biu:'Офісні посади'}, name:'Ім’я та прізвище', pos:'Посада', start:'Почати тест', need:'Впишіть ім’я та прізвище.', q:'Питання', submit:'Завершити й перевірити', missing:'Дайте відповідь на всі питання. Бракує: ', res:'Ваш результат', pass:'Зараховано', fail:'Не зараховано — поговоріть з інструктором', send:'Надіслати результат', copy:'Скопіювати результат', again:'Пройти ще раз', info:'Тест перевіряє знання після навчання з охорони праці. Результат ви надсилаєте електронною поштою спеціалісту з охорони праці; сторінка нічого не зберігає.', proof:'Результат тесту — інформація для інструктора; іспит, яким завершується періодичне навчання, проводить організатор навчання.', subj:'Результат тесту з охорони праці', code:'Код для програми BHP Audyt (не видаляйте):', noTo:'У коді немає адреси — скопіюйте результат і передайте інструктору.', bad:'Не вдалося відкрити тест. Відскануйте код ще раз.', of:'з', passMark:'поріг зарахування'}
+  };
+  const app = document.getElementById('app');
+  const esc = s=>String(s==null?'':s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function b64(bytes){ let b = ''; for(let i=0;i<bytes.length;i+=0x8000) b += String.fromCharCode.apply(null, bytes.subarray(i, i+0x8000)); return btoa(b).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,''); }
+  function unb64(s){ s = s.replace(/-/g,'+').replace(/_/g,'/'); while(s.length%4) s += '='; const r = atob(s), u = new Uint8Array(r.length); for(let i=0;i<r.length;i++) u[i] = r.charCodeAt(i); return u; }
+  async function unpack(h){ const d = unb64(h.slice(1)); const raw = h[0]==='z' ? new Uint8Array(await new Response(new Blob([d]).stream().pipeThrough(new DecompressionStream('deflate-raw'))).arrayBuffer()) : d; return JSON.parse(new TextDecoder().decode(raw)); }
+  async function pack(o){ const raw = new TextEncoder().encode(JSON.stringify(o)); if(typeof CompressionStream==='undefined') return 'j'+b64(raw); return 'z'+b64(new Uint8Array(await new Response(new Blob([raw]).stream().pipeThrough(new CompressionStream('deflate-raw'))).arrayBuffer())); }
+  let P;
+  try{ P = await unpack(decodeURIComponent(location.hash.slice(1))); if(P.k!=='tst' || !SETS[P.s]) throw 0; }
+  catch(e){ app.innerHTML = '<div class="err">'+esc(T.pl.bad)+'<br>'+esc(T.en.bad)+'<br>'+esc(T.uk.bad)+'</div>'; return; }
+  const nav = (navigator.language||'pl').slice(0,2).toLowerCase();
+  let lg = nav==='uk' || nav==='ru' ? 'uk' : nav==='en' ? 'en' : 'pl';
+  const passPct = +P.p || 70;
+  const qs = SETS[P.s].flatMap(set=>QB[set].map((q,i)=>Object.assign({id:set+(i+1)}, q)));
+  /* kolejność odpowiedzi losowana raz na otwarcie strony, żeby nie dało się „odpisać” litery od sąsiada */
+  const order = qs.map(()=>{ const o = [0,1,2]; for(let i=2;i>0;i--){ const j = Math.floor(Math.random()*(i+1)); [o[i],o[j]] = [o[j],o[i]]; } return o; });
+  const st = {name:'', pos:'', ans:{}, done:false, step:'intro'};
+  function langBar(){ return '<div class="langs">'+['pl','en','uk'].map(x=>'<button type="button" data-lg="'+x+'" class="'+(x===lg?'on':'')+'">'+x.toUpperCase()+'</button>').join('')+'</div>'; }
+  function read(){ const n = document.getElementById('nm'); if(n) st.name = n.value.trim(); const p = document.getElementById('ps'); if(p) st.pos = p.value.trim(); document.querySelectorAll('input[type=radio]:checked').forEach(r=>{ st.ans[r.name] = +r.value; }); }
+  function score(){ return qs.filter(q=>st.ans[q.id]===q.ok).length; }
+  function render(){
+    const L = T[lg]; document.documentElement.lang = lg; document.title = L.kick;
+    let h = '<div class="top"><span class="kick">'+esc(L.kick)+'</span>'+langBar()+'</div><h1>'+esc(L.sets[P.s])+'</h1><div class="cl">'+esc(P.c||'')+' · '+qs.length+' · '+esc(L.passMark)+' '+passPct+'%</div>';
+    if(st.step==='intro'){
+      h += '<p class="note">'+esc(L.info)+'</p><label>'+esc(L.name)+'<input id="nm" value="'+esc(st.name)+'" autocomplete="name"></label><label>'+esc(L.pos)+'<input id="ps" value="'+esc(st.pos)+'"></label><button class="main" id="go">'+esc(L.start)+'</button>';
+    } else {
+      h += qs.map((q,i)=>{ const t = q[lg]; return '<div class="q"><h2><span class="n">'+(i+1)+'.</span>'+esc(t[0])+'</h2>'+order[i].map(k=>{ const cls = st.done ? (k===q.ok ? ' ok' : (st.ans[q.id]===k ? ' bad' : '')) : ''; return '<label class="a'+cls+'"><input type="radio" name="'+q.id+'" value="'+k+'"'+(st.ans[q.id]===k?' checked':'')+(st.done?' disabled':'')+'><span>'+esc(t[k+1])+'</span></label>'; }).join('')+'</div>'; }).join('');
+      if(!st.done) h += '<button class="main" id="fin">'+esc(L.submit)+'</button>';
+      else { const s = score(), pct = Math.round(100*s/qs.length), ok = pct>=passPct;
+        h += '<div class="res"><div>'+esc(L.res)+' — '+esc(st.name)+'</div><div class="score '+(ok?'pass':'fail')+'">'+s+' '+esc(L.of)+' '+qs.length+' ('+pct+'%)</div><div class="'+(ok?'pass':'fail')+'">'+esc(ok?L.pass:L.fail)+'</div><button class="main" id="snd">'+esc(L.send)+'</button><button class="sec" id="cpy">'+esc(L.copy)+'</button>'+(ok?'':'<button class="sec" id="rst">'+esc(L.again)+'</button>')+'<p class="note">'+esc(L.proof)+'</p></div>'; }
+    }
+    app.innerHTML = h;
+    app.querySelectorAll('[data-lg]').forEach(b=>b.onclick = ()=>{ read(); lg = b.dataset.lg; render(); });
+    const go = document.getElementById('go'); if(go) go.onclick = ()=>{ read(); if(!st.name){ alert(L.need); return; } st.step = 'q'; render(); window.scrollTo(0,0); };
+    const fin = document.getElementById('fin'); if(fin) fin.onclick = ()=>{ read(); const miss = qs.map((q,i)=>st.ans[q.id]===undefined ? i+1 : 0).filter(Boolean); if(miss.length){ alert(L.missing+miss.join(', ')); return; } st.done = true; render(); document.querySelector('.res').scrollIntoView({behavior:'smooth'}); };
+    const snd = document.getElementById('snd'); if(snd) snd.onclick = send;
+    const cpy = document.getElementById('cpy'); if(cpy) cpy.onclick = copy;
+    const rst = document.getElementById('rst'); if(rst) rst.onclick = ()=>{ st.ans = {}; st.done = false; render(); window.scrollTo(0,0); };
+  }
+  async function build(){
+    const L = T[lg], s = score(), pct = Math.round(100*s/qs.length);
+    const now = new Date(), d = now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0')+'-'+String(now.getDate()).padStart(2,'0');
+    const rec = {v:1, k:'tst', i:P.i||'', c:P.c||'', s:P.s, n:st.name, ps:st.pos, d, sc:s, t:qs.length, p:passPct, lg, a:qs.map(q=>st.ans[q.id])};
+    const code = 'BHPT1:'+await pack(rec);
+    const text = [L.subj+' — '+(P.c||''), '', L.name+': '+st.name, L.pos+': '+(st.pos||'—'), T.pl.sets[P.s]+' ('+lg.toUpperCase()+')', d, L.res+': '+s+'/'+qs.length+' ('+pct+'%) — '+(pct>=passPct?L.pass:L.fail), '', L.code, code].join('\n');
+    return {text, subject:L.subj+' — '+st.name};
+  }
+  async function send(){ const b = await build(); if(!P.e){ await copy(); alert(T[lg].noTo); return; } location.href = 'mailto:'+encodeURIComponent(P.e)+'?subject='+encodeURIComponent(b.subject)+'&body='+encodeURIComponent(b.text); }
+  async function copy(){ const b = await build(); try{ await navigator.clipboard.writeText(b.text); }catch(e){ prompt('', b.text); } }
+  render();
+})();
+</script>
+</body>
+</html>
