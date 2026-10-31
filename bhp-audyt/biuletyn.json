@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-10-31T09:08:19Z",
+ "generatedAt": "2026-10-31T09:55:50Z",
  "sources": [
   {
    "id": "du",
@@ -21,8 +21,8 @@
    "home": "https://legislacja.gov.pl/",
    "cat": "projekty",
    "ok": true,
-   "found": 11,
-   "new": 2,
+   "found": 0,
+   "new": 0,
    "lastOk": "2026-10-31",
    "primed": true
   },
@@ -34,7 +34,7 @@
    "cat": "pip",
    "ok": true,
    "found": 8,
-   "new": 7,
+   "new": 0,
    "lastOk": "2026-10-31",
    "primed": true
   },
@@ -70,7 +70,7 @@
    "cat": "wiadomosci",
    "ok": true,
    "found": 11,
-   "new": 5,
+   "new": 0,
    "lastOk": "2026-10-31",
    "primed": true
   },
@@ -82,7 +82,7 @@
    "cat": "wiadomosci",
    "ok": true,
    "found": 1,
-   "new": 1,
+   "new": 0,
    "lastOk": "2026-10-31",
    "primed": true
   },
@@ -106,7 +106,7 @@
    "cat": "ue",
    "ok": true,
    "found": 8,
-   "new": 1,
+   "new": 0,
    "lastOk": "2026-10-31",
    "primed": true
   },
@@ -118,7 +118,7 @@
    "cat": "ppoz",
    "ok": true,
    "found": 3,
-   "new": 3,
+   "new": 0,
    "lastOk": "2026-10-31",
    "primed": true
   }
@@ -1176,6 +1176,7 @@
   }
  ],
  "skip": [
+  "02b5607e1bca",
   "0abd279aeb99",
   "0bd95bc0165e",
   "0cbf706acf28",
@@ -1250,10 +1251,12 @@
   "b5e013180f1c",
   "b7baf18fd6db",
   "be6be99f80f0",
+  "becf71f6de8e",
   "bf882ec8d010",
   "c2a1b2558f75",
   "c392ed3e27eb",
   "c54ee15d90eb",
+  "c5e4b3113b73",
   "c66205dcb563",
   "c6aeccaa1eb2",
   "c95c9d5912c2",
