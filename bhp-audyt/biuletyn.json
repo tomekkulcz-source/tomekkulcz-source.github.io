@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-01T11:27:06Z",
+ "generatedAt": "2026-11-02T12:44:56Z",
  "sources": [
   {
    "id": "du",
@@ -11,7 +11,7 @@
    "ok": true,
    "found": 7,
    "new": 0,
-   "lastOk": "2026-11-01",
+   "lastOk": "2026-11-02",
    "primed": true
   },
   {
@@ -23,7 +23,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-01",
+   "lastOk": "2026-11-02",
    "primed": true
   },
   {
@@ -33,9 +33,9 @@
    "home": "https://www.pip.gov.pl/",
    "cat": "pip",
    "ok": true,
-   "found": 0,
-   "new": 0,
-   "lastOk": "2026-11-01",
+   "found": 8,
+   "new": 1,
+   "lastOk": "2026-11-02",
    "primed": true
   },
   {
@@ -47,7 +47,7 @@
    "ok": true,
    "found": 18,
    "new": 0,
-   "lastOk": "2026-11-01",
+   "lastOk": "2026-11-02",
    "primed": true
   },
   {
@@ -59,7 +59,7 @@
    "ok": true,
    "found": 16,
    "new": 0,
-   "lastOk": "2026-11-01",
+   "lastOk": "2026-11-02",
    "primed": true
   },
   {
@@ -71,7 +71,7 @@
    "ok": true,
    "found": 11,
    "new": 0,
-   "lastOk": "2026-11-01",
+   "lastOk": "2026-11-02",
    "primed": true
   },
   {
@@ -83,7 +83,7 @@
    "ok": true,
    "found": 1,
    "new": 0,
-   "lastOk": "2026-11-01",
+   "lastOk": "2026-11-02",
    "primed": true
   },
   {
@@ -95,7 +95,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-01",
+   "lastOk": "2026-11-02",
    "primed": true
   },
   {
@@ -107,7 +107,7 @@
    "ok": true,
    "found": 8,
    "new": 0,
-   "lastOk": "2026-11-01",
+   "lastOk": "2026-11-02",
    "primed": true
   },
   {
@@ -117,13 +117,23 @@
    "home": "https://www.gov.pl/web/kgpsp",
    "cat": "ppoz",
    "ok": true,
-   "found": 3,
-   "new": 0,
-   "lastOk": "2026-11-01",
+   "found": 4,
+   "new": 1,
+   "lastOk": "2026-11-02",
    "primed": true
   }
  ],
  "items": [
+  {
+   "id": "96679889081e",
+   "src": "psp",
+   "cat": "ppoz",
+   "title": "Aplikację Gdzie się ukryć PL możesz już pobrać na telefon",
+   "lead": "Aplikacja „Gdzie się ukryć PL” Państwowej Straży Pożarnej jest już dostępna do pobrania w sklepach App Store i Google Play. Bezpłatne narzędzie, zawierające ponad 88 tys. punktów schronienia dla 24 mln osób, pomaga szybko znaleźć najbliższy taki punkt i prowadzi do niego - również bez dostępu do internetu. Aplikację…",
+   "url": "https://www.gov.pl/web/kgpsp/aplikacje-gdzie-sie-ukryc-pl-mozesz-juz-pobrac-na-telefon",
+   "date": "2026-11-02",
+   "seen": "2026-11-02"
+  },
   {
    "id": "9abebd49f4d6",
    "src": "udt",
@@ -318,6 +328,16 @@
    "url": "https://www.udt.gov.pl/aktualnosci/udt-cldt-rozszerza-zakres-akredytacji-o-amerykanskie-standardy-techniczne-asme-i-astm",
    "date": "2026-10-15",
    "seen": "2026-10-31"
+  },
+  {
+   "id": "4ac99f5d6a69",
+   "src": "pip",
+   "cat": "pip",
+   "title": "Nagrody imienia Haliny Krahelskiej",
+   "lead": "To, że laureatami tej nagrody są przedstawiciele wielu środowisk, świadczy o tym, że ochrona praw pracowników jest realizowana z wielu perspektyw. Każda wasza aktywność ma wspólny cel, dobro drugiego człowieka i za to najbardziej dziękuję. Dzięki wam idea poprawiania warunków pracy, dbałość o bezpieczeństwo i zdrowie…",
+   "url": "https://www.pip.gov.pl/aktualnosci/nagrody-imienia-haliny-krahelskiej",
+   "date": "2026-10-14",
+   "seen": "2026-11-02"
   },
   {
    "id": "d3fabbd896b3",
@@ -1191,6 +1211,7 @@
   "1e5cdf9f2485",
   "202461636601",
   "215f1f6f8212",
+  "232aa6f5fa97",
   "25f3258d74f6",
   "26fdb53e6c63",
   "2996a3cf6d79",
