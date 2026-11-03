@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-02T12:44:56Z",
+ "generatedAt": "2026-11-03T12:11:04Z",
  "sources": [
   {
    "id": "du",
@@ -11,7 +11,7 @@
    "ok": true,
    "found": 7,
    "new": 0,
-   "lastOk": "2026-11-02",
+   "lastOk": "2026-11-03",
    "primed": true
   },
   {
@@ -23,7 +23,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-02",
+   "lastOk": "2026-11-03",
    "primed": true
   },
   {
@@ -33,9 +33,9 @@
    "home": "https://www.pip.gov.pl/",
    "cat": "pip",
    "ok": true,
-   "found": 8,
-   "new": 1,
-   "lastOk": "2026-11-02",
+   "found": 0,
+   "new": 0,
+   "lastOk": "2026-11-03",
    "primed": true
   },
   {
@@ -47,7 +47,7 @@
    "ok": true,
    "found": 18,
    "new": 0,
-   "lastOk": "2026-11-02",
+   "lastOk": "2026-11-03",
    "primed": true
   },
   {
@@ -59,7 +59,7 @@
    "ok": true,
    "found": 16,
    "new": 0,
-   "lastOk": "2026-11-02",
+   "lastOk": "2026-11-03",
    "primed": true
   },
   {
@@ -69,9 +69,9 @@
    "home": "https://www.udt.gov.pl/",
    "cat": "wiadomosci",
    "ok": true,
-   "found": 11,
-   "new": 0,
-   "lastOk": "2026-11-02",
+   "found": 12,
+   "new": 1,
+   "lastOk": "2026-11-03",
    "primed": true
   },
   {
@@ -83,7 +83,7 @@
    "ok": true,
    "found": 1,
    "new": 0,
-   "lastOk": "2026-11-02",
+   "lastOk": "2026-11-03",
    "primed": true
   },
   {
@@ -95,7 +95,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-02",
+   "lastOk": "2026-11-03",
    "primed": true
   },
   {
@@ -107,7 +107,7 @@
    "ok": true,
    "found": 8,
    "new": 0,
-   "lastOk": "2026-11-02",
+   "lastOk": "2026-11-03",
    "primed": true
   },
   {
@@ -118,12 +118,23 @@
    "cat": "ppoz",
    "ok": true,
    "found": 4,
-   "new": 1,
-   "lastOk": "2026-11-02",
+   "new": 0,
+   "lastOk": "2026-11-03",
    "primed": true
   }
  ],
  "items": [
+  {
+   "id": "7cb24e73617a",
+   "src": "udt",
+   "cat": "wiadomosci",
+   "title": "Bezpieczny rozwój firmy – zapraszamy na bezpłatne webinaria UDT",
+   "lead": "Urząd Dozoru Technicznego (UDT) jest państwową osobą prawną działającą w obszarze bezpieczeństwa urządzeń technicznych. WSPIERAMY ROZWÓJ. DBAMY O BEZPIECZEŃSTWO.",
+   "url": "https://www.udt.gov.pl/aktualnosci/bezpieczny-rozwoj-firmy---zapraszamy-na-bezplatne-webinaria-udt",
+   "date": "2026-11-03",
+   "seen": "2026-11-03",
+   "dateGuess": true
+  },
   {
    "id": "96679889081e",
    "src": "psp",
