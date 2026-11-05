@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-04T12:23:46Z",
+ "generatedAt": "2026-11-05T12:38:04Z",
  "sources": [
   {
    "id": "du",
@@ -11,7 +11,7 @@
    "ok": true,
    "found": 7,
    "new": 0,
-   "lastOk": "2026-11-04",
+   "lastOk": "2026-11-05",
    "primed": true
   },
   {
@@ -23,7 +23,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-04",
+   "lastOk": "2026-11-05",
    "primed": true
   },
   {
@@ -35,7 +35,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-04",
+   "lastOk": "2026-11-05",
    "primed": true
   },
   {
@@ -47,7 +47,7 @@
    "ok": true,
    "found": 18,
    "new": 0,
-   "lastOk": "2026-11-04",
+   "lastOk": "2026-11-05",
    "primed": true
   },
   {
@@ -59,7 +59,7 @@
    "ok": true,
    "found": 16,
    "new": 0,
-   "lastOk": "2026-11-04",
+   "lastOk": "2026-11-05",
    "primed": true
   },
   {
@@ -71,7 +71,7 @@
    "ok": true,
    "found": 12,
    "new": 0,
-   "lastOk": "2026-11-04",
+   "lastOk": "2026-11-05",
    "primed": true
   },
   {
@@ -83,7 +83,7 @@
    "ok": true,
    "found": 1,
    "new": 0,
-   "lastOk": "2026-11-04",
+   "lastOk": "2026-11-05",
    "primed": true
   },
   {
@@ -95,7 +95,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-04",
+   "lastOk": "2026-11-05",
    "primed": true
   },
   {
@@ -107,7 +107,7 @@
    "ok": true,
    "found": 8,
    "new": 0,
-   "lastOk": "2026-11-04",
+   "lastOk": "2026-11-05",
    "primed": true
   },
   {
@@ -119,7 +119,7 @@
    "ok": true,
    "found": 4,
    "new": 0,
-   "lastOk": "2026-11-04",
+   "lastOk": "2026-11-05",
    "primed": true
   }
  ],
@@ -1216,6 +1216,7 @@
   "1286e6f37112",
   "17b1c590a293",
   "1b60ddc6aef6",
+  "1bb38b3ee478",
   "1cde1b18a9dd",
   "1cfc2693a0c9",
   "1e0d55e16136",
