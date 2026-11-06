@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-05T12:38:04Z",
+ "generatedAt": "2026-11-06T12:20:42Z",
  "sources": [
   {
    "id": "du",
@@ -11,7 +11,7 @@
    "ok": true,
    "found": 7,
    "new": 0,
-   "lastOk": "2026-11-05",
+   "lastOk": "2026-11-06",
    "primed": true
   },
   {
@@ -23,7 +23,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-05",
+   "lastOk": "2026-11-06",
    "primed": true
   },
   {
@@ -33,9 +33,9 @@
    "home": "https://www.pip.gov.pl/",
    "cat": "pip",
    "ok": true,
-   "found": 0,
-   "new": 0,
-   "lastOk": "2026-11-05",
+   "found": 8,
+   "new": 3,
+   "lastOk": "2026-11-06",
    "primed": true
   },
   {
@@ -47,7 +47,7 @@
    "ok": true,
    "found": 18,
    "new": 0,
-   "lastOk": "2026-11-05",
+   "lastOk": "2026-11-06",
    "primed": true
   },
   {
@@ -59,7 +59,7 @@
    "ok": true,
    "found": 16,
    "new": 0,
-   "lastOk": "2026-11-05",
+   "lastOk": "2026-11-06",
    "primed": true
   },
   {
@@ -71,7 +71,7 @@
    "ok": true,
    "found": 12,
    "new": 0,
-   "lastOk": "2026-11-05",
+   "lastOk": "2026-11-06",
    "primed": true
   },
   {
@@ -81,9 +81,9 @@
    "home": "https://www.gov.pl/web/rodzina",
    "cat": "wiadomosci",
    "ok": true,
-   "found": 1,
-   "new": 0,
-   "lastOk": "2026-11-05",
+   "found": 2,
+   "new": 1,
+   "lastOk": "2026-11-06",
    "primed": true
   },
   {
@@ -95,7 +95,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-05",
+   "lastOk": "2026-11-06",
    "primed": true
   },
   {
@@ -106,8 +106,8 @@
    "cat": "ue",
    "ok": true,
    "found": 8,
-   "new": 0,
-   "lastOk": "2026-11-05",
+   "new": 1,
+   "lastOk": "2026-11-06",
    "primed": true
   },
   {
@@ -117,13 +117,53 @@
    "home": "https://www.gov.pl/web/kgpsp",
    "cat": "ppoz",
    "ok": true,
-   "found": 4,
+   "found": 3,
    "new": 0,
-   "lastOk": "2026-11-05",
+   "lastOk": "2026-11-06",
    "primed": true
   }
  ],
  "items": [
+  {
+   "id": "69d35a598fa5",
+   "src": "osha",
+   "cat": "ue",
+   "title": "New OiRA tools strengthen workplace safety in Belgium and Lithuania",
+   "lead": "New Online interactive Risk Assessment (OiRA) tools are now available to help businesses and healthcare organisations identify occupational risks and improve workplace safety and health.",
+   "url": "https://osha.europa.eu/en/oshnews/new-oira-tools-strengthen-workplace-safety-belgium-and-lithuania",
+   "date": "2026-11-06",
+   "seen": "2026-11-06"
+  },
+  {
+   "id": "407654220a78",
+   "src": "pip",
+   "cat": "pip",
+   "title": "UWAGA! Państwowa Inspekcja Pracy informuje",
+   "lead": "Informujemy, że w dniach 09.11.2026 r. i 10.11.2026 r. porady prawne z zakresu legalności zatrudnienia obywateli Ukrainy na terytorium Rzeczypospolitej Polskiej w języku ukraińskim udzielane będą pod numerem telefonu 22 111 35 88. Інформуємо, що в дні 09.11.2026 р. і 10.11.2026 р. консультації щодо легальності…",
+   "url": "https://www.pip.gov.pl/aktualnosci/uwaga-panstwowa-inspekcja-pracy-informuje",
+   "date": "2026-11-05",
+   "seen": "2026-11-06"
+  },
+  {
+   "id": "7f7cf06553d4",
+   "src": "pip",
+   "cat": "pip",
+   "title": "Przeciwdziałanie dyskryminacji i mobbingowi w świetle nowych przepisów",
+   "lead": "Przeciwdziałanie niepożądanym zachowaniom w miejscu pracy będzie skuteczniejsze. To za sprawą nowelizacji Kodeksu pracy, która wprowadza nowe obowiązki dla pracodawców, doprecyzowuje niejasną dotąd definicję mobbingu i ułatwia dochodzenie roszczeń.",
+   "url": "https://www.pip.gov.pl/aktualnosci/przeciwdzialanie-dyskryminacji-i-mobbingowi-w-swietle-nowych-przepisow",
+   "date": "2026-11-05",
+   "seen": "2026-11-06"
+  },
+  {
+   "id": "1c2458166a12",
+   "src": "mrpips",
+   "cat": "wiadomosci",
+   "title": "Nowe przepisy antymobbingowe wchodzą w życie",
+   "lead": "To ważny dzień dla milionów pracownic i pracowników w Polsce. Dzisiaj w życie wchodzi ustawa antymobbingowa przygotowana w Ministerstwie Rodziny, Pracy i Polityki Społecznej.",
+   "url": "https://www.gov.pl/web/rodzina/nowe-przepisy-antymobbingowe-wchodza-w-zycie",
+   "date": "2026-11-05",
+   "seen": "2026-11-06"
+  },
   {
    "id": "7cb24e73617a",
    "src": "udt",
@@ -134,6 +174,16 @@
    "date": "2026-11-03",
    "seen": "2026-11-03",
    "dateGuess": true
+  },
+  {
+   "id": "d8d560c7962b",
+   "src": "pip",
+   "cat": "pip",
+   "title": "Parlament Przyszłości – debata młodych o młodych",
+   "lead": "– „Jutro to dziś, tyle że jutro” – słowami Sławomira Mrożka przywitał młodych uczestników debaty Parlament Przyszłości Główny Inspektor Pracy Janusz Krasoń. – Przed wami przyszłość, więc to dobrze, że dziś mówimy o jutrze, bo ono jest już dzisiaj.",
+   "url": "https://www.pip.gov.pl/aktualnosci/parlament-przyszlosci-debata-mlodych-o-mlodych",
+   "date": "2026-11-02",
+   "seen": "2026-11-06"
   },
   {
    "id": "96679889081e",
@@ -1274,6 +1324,7 @@
   "8fe30a9f525b",
   "92b86930b4fa",
   "932215b17613",
+  "97e64a4e73d2",
   "98180715eebc",
   "998530415097",
   "a139ef0e16b8",
