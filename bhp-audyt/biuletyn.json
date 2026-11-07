@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-06T12:20:42Z",
+ "generatedAt": "2026-11-07T11:16:55Z",
  "sources": [
   {
    "id": "du",
@@ -11,7 +11,7 @@
    "ok": true,
    "found": 7,
    "new": 0,
-   "lastOk": "2026-11-06",
+   "lastOk": "2026-11-07",
    "primed": true
   },
   {
@@ -23,7 +23,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-06",
+   "lastOk": "2026-11-07",
    "primed": true
   },
   {
@@ -32,9 +32,8 @@
    "full": "Państwowa Inspekcja Pracy",
    "home": "https://www.pip.gov.pl/",
    "cat": "pip",
-   "ok": true,
-   "found": 8,
-   "new": 3,
+   "ok": false,
+   "error": "URLError: <urlopen error timed out>",
    "lastOk": "2026-11-06",
    "primed": true
   },
@@ -47,7 +46,7 @@
    "ok": true,
    "found": 18,
    "new": 0,
-   "lastOk": "2026-11-06",
+   "lastOk": "2026-11-07",
    "primed": true
   },
   {
@@ -59,7 +58,7 @@
    "ok": true,
    "found": 16,
    "new": 0,
-   "lastOk": "2026-11-06",
+   "lastOk": "2026-11-07",
    "primed": true
   },
   {
@@ -71,7 +70,7 @@
    "ok": true,
    "found": 12,
    "new": 0,
-   "lastOk": "2026-11-06",
+   "lastOk": "2026-11-07",
    "primed": true
   },
   {
@@ -82,8 +81,8 @@
    "cat": "wiadomosci",
    "ok": true,
    "found": 2,
-   "new": 1,
-   "lastOk": "2026-11-06",
+   "new": 0,
+   "lastOk": "2026-11-07",
    "primed": true
   },
   {
@@ -95,7 +94,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-06",
+   "lastOk": "2026-11-07",
    "primed": true
   },
   {
@@ -106,8 +105,8 @@
    "cat": "ue",
    "ok": true,
    "found": 8,
-   "new": 1,
-   "lastOk": "2026-11-06",
+   "new": 0,
+   "lastOk": "2026-11-07",
    "primed": true
   },
   {
@@ -119,7 +118,7 @@
    "ok": true,
    "found": 3,
    "new": 0,
-   "lastOk": "2026-11-06",
+   "lastOk": "2026-11-07",
    "primed": true
   }
  ],
