@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-07T11:16:55Z",
+ "generatedAt": "2026-11-08T11:27:44Z",
  "sources": [
   {
    "id": "du",
@@ -9,9 +9,9 @@
    "home": "https://dziennikustaw.gov.pl/",
    "cat": "przepisy",
    "ok": true,
-   "found": 7,
+   "found": 6,
    "new": 0,
-   "lastOk": "2026-11-07",
+   "lastOk": "2026-11-08",
    "primed": true
   },
   {
@@ -23,7 +23,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-07",
+   "lastOk": "2026-11-08",
    "primed": true
   },
   {
@@ -32,9 +32,10 @@
    "full": "Państwowa Inspekcja Pracy",
    "home": "https://www.pip.gov.pl/",
    "cat": "pip",
-   "ok": false,
-   "error": "URLError: <urlopen error timed out>",
-   "lastOk": "2026-11-06",
+   "ok": true,
+   "found": 0,
+   "new": 0,
+   "lastOk": "2026-11-08",
    "primed": true
   },
   {
@@ -46,7 +47,7 @@
    "ok": true,
    "found": 18,
    "new": 0,
-   "lastOk": "2026-11-07",
+   "lastOk": "2026-11-08",
    "primed": true
   },
   {
@@ -58,7 +59,7 @@
    "ok": true,
    "found": 16,
    "new": 0,
-   "lastOk": "2026-11-07",
+   "lastOk": "2026-11-08",
    "primed": true
   },
   {
@@ -70,7 +71,7 @@
    "ok": true,
    "found": 12,
    "new": 0,
-   "lastOk": "2026-11-07",
+   "lastOk": "2026-11-08",
    "primed": true
   },
   {
@@ -82,7 +83,7 @@
    "ok": true,
    "found": 2,
    "new": 0,
-   "lastOk": "2026-11-07",
+   "lastOk": "2026-11-08",
    "primed": true
   },
   {
@@ -94,7 +95,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-07",
+   "lastOk": "2026-11-08",
    "primed": true
   },
   {
@@ -106,7 +107,7 @@
    "ok": true,
    "found": 8,
    "new": 0,
-   "lastOk": "2026-11-07",
+   "lastOk": "2026-11-08",
    "primed": true
   },
   {
@@ -118,7 +119,7 @@
    "ok": true,
    "found": 3,
    "new": 0,
-   "lastOk": "2026-11-07",
+   "lastOk": "2026-11-08",
    "primed": true
   }
  ],
@@ -1349,6 +1350,7 @@
   "cc3e3c664e31",
   "ce3f57ad48ac",
   "ce63f8d24eeb",
+  "cfe261790c1e",
   "d1499f320cc1",
   "d1dcee98cb2a",
   "d76d605fd376",
