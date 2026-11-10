@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-08T11:27:44Z",
+ "generatedAt": "2026-11-10T12:53:20Z",
  "sources": [
   {
    "id": "du",
@@ -8,9 +8,8 @@
    "full": "Dziennik Ustaw RP (API Sejmu — ELI)",
    "home": "https://dziennikustaw.gov.pl/",
    "cat": "przepisy",
-   "ok": true,
-   "found": 6,
-   "new": 0,
+   "ok": false,
+   "error": "RemoteDisconnected: Remote end closed connection without response",
    "lastOk": "2026-11-08",
    "primed": true
   },
@@ -23,7 +22,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-08",
+   "lastOk": "2026-11-10",
    "primed": true
   },
   {
@@ -35,7 +34,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-08",
+   "lastOk": "2026-11-10",
    "primed": true
   },
   {
@@ -47,7 +46,7 @@
    "ok": true,
    "found": 18,
    "new": 0,
-   "lastOk": "2026-11-08",
+   "lastOk": "2026-11-10",
    "primed": true
   },
   {
@@ -59,7 +58,7 @@
    "ok": true,
    "found": 16,
    "new": 0,
-   "lastOk": "2026-11-08",
+   "lastOk": "2026-11-10",
    "primed": true
   },
   {
@@ -71,7 +70,7 @@
    "ok": true,
    "found": 12,
    "new": 0,
-   "lastOk": "2026-11-08",
+   "lastOk": "2026-11-10",
    "primed": true
   },
   {
@@ -83,7 +82,7 @@
    "ok": true,
    "found": 2,
    "new": 0,
-   "lastOk": "2026-11-08",
+   "lastOk": "2026-11-10",
    "primed": true
   },
   {
@@ -95,7 +94,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-08",
+   "lastOk": "2026-11-10",
    "primed": true
   },
   {
@@ -107,7 +106,7 @@
    "ok": true,
    "found": 8,
    "new": 0,
-   "lastOk": "2026-11-08",
+   "lastOk": "2026-11-10",
    "primed": true
   },
   {
@@ -119,7 +118,7 @@
    "ok": true,
    "found": 3,
    "new": 0,
-   "lastOk": "2026-11-08",
+   "lastOk": "2026-11-10",
    "primed": true
   }
  ],
@@ -1277,6 +1276,7 @@
   "25f3258d74f6",
   "26fdb53e6c63",
   "2996a3cf6d79",
+  "3026c9ea4c60",
   "31ea1ea974d5",
   "31eb6736be41",
   "32dbdc2ed2e6",
@@ -1293,6 +1293,7 @@
   "483ddc91c43b",
   "485aa98c37dc",
   "4a5897394ae6",
+  "4bd417eaefb1",
   "4d26f7cbd0b0",
   "5886aa860e56",
   "58e5a9a4265f",
@@ -1332,6 +1333,7 @@
   "a99416ba801e",
   "ad53b9786341",
   "b1183e20ca33",
+  "b29de201aae1",
   "b5e013180f1c",
   "b7baf18fd6db",
   "be6be99f80f0",
