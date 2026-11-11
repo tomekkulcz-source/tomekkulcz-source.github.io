@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-10T12:53:20Z",
+ "generatedAt": "2026-11-11T12:02:24Z",
  "sources": [
   {
    "id": "du",
@@ -8,9 +8,10 @@
    "full": "Dziennik Ustaw RP (API Sejmu — ELI)",
    "home": "https://dziennikustaw.gov.pl/",
    "cat": "przepisy",
-   "ok": false,
-   "error": "RemoteDisconnected: Remote end closed connection without response",
-   "lastOk": "2026-11-08",
+   "ok": true,
+   "found": 6,
+   "new": 0,
+   "lastOk": "2026-11-11",
    "primed": true
   },
   {
@@ -22,7 +23,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-10",
+   "lastOk": "2026-11-11",
    "primed": true
   },
   {
@@ -34,7 +35,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-10",
+   "lastOk": "2026-11-11",
    "primed": true
   },
   {
@@ -44,9 +45,9 @@
    "home": "https://www.ciop.pl/newsletter-bhp",
    "cat": "wiedza",
    "ok": true,
-   "found": 18,
-   "new": 0,
-   "lastOk": "2026-11-10",
+   "found": 22,
+   "new": 10,
+   "lastOk": "2026-11-11",
    "primed": true
   },
   {
@@ -56,9 +57,9 @@
    "home": "https://www.ciop.pl/newsletter-bhp",
    "cat": "chemia",
    "ok": true,
-   "found": 16,
-   "new": 0,
-   "lastOk": "2026-11-10",
+   "found": 19,
+   "new": 6,
+   "lastOk": "2026-11-11",
    "primed": true
   },
   {
@@ -70,7 +71,7 @@
    "ok": true,
    "found": 12,
    "new": 0,
-   "lastOk": "2026-11-10",
+   "lastOk": "2026-11-11",
    "primed": true
   },
   {
@@ -82,7 +83,7 @@
    "ok": true,
    "found": 2,
    "new": 0,
-   "lastOk": "2026-11-10",
+   "lastOk": "2026-11-11",
    "primed": true
   },
   {
@@ -94,7 +95,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-10",
+   "lastOk": "2026-11-11",
    "primed": true
   },
   {
@@ -104,9 +105,9 @@
    "home": "https://osha.europa.eu/pl",
    "cat": "ue",
    "ok": true,
-   "found": 8,
-   "new": 0,
-   "lastOk": "2026-11-10",
+   "found": 9,
+   "new": 1,
+   "lastOk": "2026-11-11",
    "primed": true
   },
   {
@@ -118,11 +119,21 @@
    "ok": true,
    "found": 3,
    "new": 0,
-   "lastOk": "2026-11-10",
+   "lastOk": "2026-11-11",
    "primed": true
   }
  ],
  "items": [
+  {
+   "id": "ee44c2704370",
+   "src": "osha",
+   "cat": "ue",
+   "title": "Start your career as an EU-OSHA trainee!",
+   "lead": "Are you an enthusiastic graduate looking to kick-start your career at a European Agency dedicated to promoting safe, healthy and productive workplaces? EU-OSHA is seeking talented candidates to join the Agency for a paid six-month traineeship at its headquarters in Bilbao or its Brussels Liaison Office. We are…",
+   "url": "https://osha.europa.eu/en/oshnews/start-your-career-eu-osha-trainee",
+   "date": "2026-11-11",
+   "seen": "2026-11-11"
+  },
   {
    "id": "69d35a598fa5",
    "src": "osha",
@@ -512,6 +523,198 @@
    "url": "https://osha.europa.eu/en/oshnews/inspiring-stories-compete-healthy-workplaces-film-award",
    "date": "2026-10-02",
    "seen": "2026-10-09"
+  },
+  {
+   "id": "89bb02708378",
+   "src": "ciop",
+   "cat": "wiedza",
+   "title": "Finał konkursu na plakat „Transport XXI wieku” – zapraszamy!",
+   "lead": "Jak pokazać wyzwania związane z bezpieczeństwem pracy we współczesnym transporcie? Przekonamy się 28 października 2026 r. podczas finału XXXV edycji konkursu na plakat bezpieczeństwa pracy „Transport XXI wieku”. W programie ogłoszenie wyników, wręczenie nagród laureatom oraz otwarcie wystawy 50 plakatów poświęconych…",
+   "url": "https://ciop.pl/CIOPPortalWAR/appmanager/ciop/pl?_nfpb=true&_pageLabel=P6800286261340447109849&html_klucz=11221&html_klucz_spis=&html_tresc_id=300017527&html_tresc_root_id=11221",
+   "issue": "Newsletter CIOP-PIB BHP 10/2026",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/bhp/2026/10/newsletter-bhp202610s.html",
+   "date": "2026-10-01",
+   "seen": "2026-11-11"
+  },
+  {
+   "id": "555aa80291c0",
+   "src": "ciop",
+   "cat": "wiedza",
+   "title": "Rozpoczęła się europejska kampania „Zdrowa praca, zdrowa głowa”",
+   "lead": "Stres, przemoc i inne zagrożenia psychospołeczne mogą negatywnie wpływać na zdrowie psychiczne pracowników. Ich ograniczaniu poświęcona jest nowa europejska kampania „Zdrowa praca, zdrowa głowa”, koordynowana przez Europejską Agencję Bezpieczeństwa i Zdrowia w Pracy (EU-OSHA). Jej celem jest zwiększanie świadomości…",
+   "url": "https://www.youtube.com/live/mxCiLYkqIW8?si=WNia-RMoz6aVKBB3",
+   "issue": "Newsletter CIOP-PIB BHP 10/2026",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/bhp/2026/10/newsletter-bhp202610s.html",
+   "date": "2026-10-01",
+   "seen": "2026-11-11"
+  },
+  {
+   "id": "53311031fe79",
+   "src": "ciop",
+   "cat": "wiedza",
+   "title": "Stres i mobbing w pracy – konferencja w Łodzi",
+   "lead": "W ramach kampanii „Zdrowa praca, zdrowa głowa” zapraszamy na konferencję „Zdrowa praca, zdrowa głowa. Bez stresu i mobbingu”, która odbędzie się 16 listopada 2026 r. w Łodzi. Wydarzenie organizowane przez CIOP-PIB oraz Fundację Rozwoju Przedsiębiorczości będzie okazją do pogłębienia wiedzy o zagrożeniach…",
+   "url": "https://enewsroom.pl/transmisje/rejestracja/29",
+   "issue": "Newsletter CIOP-PIB BHP 10/2026",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/bhp/2026/10/newsletter-bhp202610s.html",
+   "date": "2026-10-01",
+   "seen": "2026-11-11"
+  },
+  {
+   "id": "273f75f909d8",
+   "src": "ciop",
+   "cat": "wiedza",
+   "title": "(Od)blokowany potencjał – ruszyła rejestracja na Kongres Inclu(vi)sion",
+   "lead": "Rynek pracy otwarty na osoby z niepełnosprawnościami i potencjał różnorodnych zespołów to główne tematy IV Kongresu Inclu(vi)sion pod hasłem „(Od)blokowany potencjał”. Wydarzenie, połączone z III Wirtualnymi Targami Pracy, odbędzie się online 3 grudnia 2026 r. Jest skierowane do osób z niepełnosprawnościami…",
+   "url": "https://incluvision.aktywizacja.org.pl/kongres",
+   "issue": "Newsletter CIOP-PIB BHP 10/2026",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/bhp/2026/10/newsletter-bhp202610s.html",
+   "date": "2026-10-01",
+   "seen": "2026-11-11"
+  },
+  {
+   "id": "3a31b8c19d0a",
+   "src": "ciop",
+   "cat": "wiedza",
+   "title": "Ból pleców u pracowników biurowych – jak mu zapobiegać?",
+   "lead": "Długotrwałe siedzenie, niewłaściwe ustawienie stanowiska i niedostateczna wiedza o ergonomii mogą sprzyjać dolegliwościom bólowym pleców, które wpływają na komfort i zdolność do pracy. W artykule opublikowanym w miesięczniku „Bezpieczeństwo Pracy. Nauka i Praktyka” przedstawiono działania profilaktyczne, które mogą…",
+   "url": "https://www.ciop.pl/CIOPPortalWAR/file/102280/2026091410493&BP_08_2026_12_16_LACH.pdf",
+   "issue": "Newsletter CIOP-PIB BHP 10/2026",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/bhp/2026/10/newsletter-bhp202610s.html",
+   "date": "2026-10-01",
+   "seen": "2026-11-11"
+  },
+  {
+   "id": "4a75fab85b59",
+   "src": "ciop",
+   "cat": "wiedza",
+   "title": "Pracujesz przy komputerze? Sprawdź ergonomię swojego stanowiska",
+   "lead": "Odpowiednie ustawienie stanowiska i regularne ćwiczenia mogą pomóc zadbać o zdrowie i komfort podczas pracy przy komputerze. W serwisie CIOP-PIB znajdziesz praktyczne wskazówki i narzędzia ułatwiające poprawę ergonomii stanowiska. Skorzystaj z listy kontrolnej, poznaj ćwiczenia zalecane pracownikom biurowym i sprawdź…",
+   "url": "https://t3app.ciop.pl/pl/ew/",
+   "issue": "Newsletter CIOP-PIB BHP 10/2026",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/bhp/2026/10/newsletter-bhp202610s.html",
+   "date": "2026-10-01",
+   "seen": "2026-11-11"
+  },
+  {
+   "id": "92f44952a838",
+   "src": "ciop",
+   "cat": "wiedza",
+   "title": "Nowe normy dotyczące bezpieczeństwa pracy i ochrony czystości powietrza",
+   "lead": "W serwisie CHEMPYŁ udostępniono wykaz nowo opublikowanych norm dotyczących bezpieczeństwa pracy i ochrony czystości powietrza. Normy opracowane przez CIOP-PIB na podstawie wyników badań naukowych i doświadczeń praktycznych mogą być pomocne przy ocenie zagrożeń, aktualizacji rozwiązań technicznych i planowaniu działań…",
+   "url": "https://www.ciop.pl/CIOPPortalWAR/appmanager/ciop/pl?_nfpb=true&_pageLabel=P14400132071346315291310&html_tresc_root_id=16487&html_tresc_id=3000806&html_klucz=16487&html_klucz_spis=16487",
+   "issue": "Newsletter CIOP-PIB BHP 10/2026",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/bhp/2026/10/newsletter-bhp202610s.html",
+   "date": "2026-10-01",
+   "seen": "2026-11-11"
+  },
+  {
+   "id": "a6f830fbb01e",
+   "src": "ciop",
+   "cat": "wiedza",
+   "title": "Nowe normy ochrony oczu i twarzy – co się zmieniło?",
+   "lead": "Wprowadzenie nowych serii norm PN-EN ISO 16321 i PN-EN ISO 18526 to jedna z największych od ponad 20 lat zmian w ocenie środków ochrony oczu i twarzy. Zastępują one dotychczasowe podejście oparte na normie PN-EN 166:2005. W artykule opublikowanym w miesięczniku „Bezpieczeństwo Pracy. Nauka i Praktyka” ekspertki…",
+   "url": "https://www.ciop.pl/CIOPPortalWAR/file/102400/20261008105147&BP10_2026_TARCZYNSKA_22-27.pdf",
+   "issue": "Newsletter CIOP-PIB BHP 10/2026",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/bhp/2026/10/newsletter-bhp202610s.html",
+   "date": "2026-10-01",
+   "seen": "2026-11-11"
+  },
+  {
+   "id": "4a713e512c88",
+   "src": "ciop",
+   "cat": "wiedza",
+   "title": "Nowe badania w JOSE – od ergonomii po cyberbezpieczeństwo maszyn",
+   "lead": "Ergonomia pracy operatorów wózków przemysłowych, ocena ryzyka cybernetycznego związanego z maszynami oraz dolegliwości bólowe szyi wśród specjalistów IT – to tematy nowych artykułów opublikowanych w anglojęzycznym kwartalniku „International Journal of Occupational Safety and Ergonomics” (JOSE). Zachęcamy do zapoznania…",
+   "url": "https://www.tandfonline.com/doi/full/10.1080/10803548.2025.2594907",
+   "issue": "Newsletter CIOP-PIB BHP 10/2026",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/bhp/2026/10/newsletter-bhp202610s.html",
+   "date": "2026-10-01",
+   "seen": "2026-11-11"
+  },
+  {
+   "id": "225d8343c4c2",
+   "src": "ciop",
+   "cat": "wiedza",
+   "title": "Literatura naukowa i fachowa online – skorzystaj z IBUK Libra",
+   "lead": "Szukasz specjalistycznych publikacji z zakresu bhp, ergonomii, zdrowia, psychospołecznych warunków pracy lub cyberbezpieczeństwa? Biblioteka CIOP-PIB udostępnia platformę IBUK Libra, oferującą elektroniczny dostęp do literatury naukowej i fachowej. Założenie indywidualnego konta w Bibliotece CIOP-PIB umożliwia…",
+   "url": "https://www.ciop.pl/CIOPPortalWAR/appmanager/ciop/pl?_nfpb=true&_pageLabel=P45400346021532514997966",
+   "issue": "Newsletter CIOP-PIB BHP 10/2026",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/bhp/2026/10/newsletter-bhp202610s.html",
+   "date": "2026-10-01",
+   "seen": "2026-11-11"
+  },
+  {
+   "id": "2b94b755a7b2",
+   "src": "ciopchem",
+   "cat": "chemia",
+   "title": "W najnowszym numerze PiMOŚP nr 3 (129) 2026 ukazały się artykuły z metodami oznaczania substancji chemicznych, tj. p-benzochinonu i kwasu…",
+   "lead": "W najnowszym numerze PiMOŚP nr 3 (129) 2026 ukazały się artykuły z metodami oznaczania substancji chemicznych, tj. p-benzochinonu i kwasu pentadekafluorooktanowego oraz dokumentacjami proponowanych wartości dopuszczalnych wielkości narażenia zawodowego dla 1,2-Dichloropropanu, D-limonenu i Kwasu tereftalowego (frakcja…",
+   "url": "https://www.ciop.pl/CIOPPortalWAR/appmanager/ciop/pl?_nfpb=true&_pageLabel=P15600349351347547316936&magazineEditionId=1472",
+   "issue": "Newsletter CIOP-PIB Chemia i pyły 10/2026 · Aktualności",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/chempyl/2026/10/newsletter-202610s.html",
+   "date": "2026-10-01",
+   "seen": "2026-11-11"
+  },
+  {
+   "id": "67216e7c8e23",
+   "src": "ciopchem",
+   "cat": "chemia",
+   "title": "27 października 2026 r. obędzie się 115 posiedzenie Międzyresortowej Komisji ds. Najwyższych Dopuszczalnych Stężeń i Natężeń Czynników Szkodliwych…",
+   "lead": "27 października 2026 r. obędzie się 115 posiedzenie Międzyresortowej Komisji ds. Najwyższych Dopuszczalnych Stężeń i Natężeń Czynników Szkodliwych dla Zdrowia w Środowisku Pracy. Na posiedzeniu przedstawione zostaną uzasadnienia propozycji wartości dopuszczalnych stężeń dla kwasu cytrynowego [77-92-9] i oksymu acetonu…",
+   "url": "https://www.ciop.pl/CIOPPortalWAR/appmanager/ciop/pl?_nfpb=true&_pageLabel=P60600329261644998652393",
+   "issue": "Newsletter CIOP-PIB Chemia i pyły 10/2026 · Aktualności",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/chempyl/2026/10/newsletter-202610s.html",
+   "date": "2026-10-01",
+   "seen": "2026-11-11"
+  },
+  {
+   "id": "5e31e72d3256",
+   "src": "ciopchem",
+   "cat": "chemia",
+   "title": "Minister Zdrowia opublikował Komunikat nr 39 w sprawie realizacji szczepień przeciw COVID-19 w sezonie 2026/2027.",
+   "lead": "",
+   "url": "https://www.gov.pl/web/zdrowie/komunikat-nr-39-ministra-zdrowia-w-sprawie-realizacji-szczepien-przeciw-covid-19-w-sezonie-20262028",
+   "issue": "Newsletter CIOP-PIB Chemia i pyły 10/2026 · Aktualności",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/chempyl/2026/10/newsletter-202610s.html",
+   "date": "2026-10-01",
+   "seen": "2026-11-11"
+  },
+  {
+   "id": "4327ad049dca",
+   "src": "ciopchem",
+   "cat": "chemia",
+   "title": "Sezon na szczepienia przeciwko grypie już się rozpoczął!",
+   "lead": "Jesień to dobry moment, aby pomyśleć o profilaktyce. Informacje o organizacji szczepień w sezonie 2025/2026 oraz dostępnych szczepionkach znajdziesz w zakładce BIOINFO „Warto wiedzieć”.",
+   "url": "https://www.ciop.pl/CIOPPortalWAR/appmanager/ciop/pl?_nfpb=true&_pageLabel=P25000149031403773780227&html_tresc_root_id=405&html_tresc_id=300002844&html_klucz=405&html_klucz_spis=405",
+   "issue": "Newsletter CIOP-PIB Chemia i pyły 10/2026 · BIOINFO",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/chempyl/2026/10/newsletter-202610s.html",
+   "date": "2026-10-01",
+   "seen": "2026-11-11"
+  },
+  {
+   "id": "c777220e1d15",
+   "src": "ciopchem",
+   "cat": "chemia",
+   "title": "Zachęcamy do obejrzenia filmów instruktażowych poświęconych metodom pomiarowym stosowanych przy ocenie narażenia na szkodliwe czynniki biologiczne:",
+   "lead": "",
+   "url": "https://www.ciop.pl/CIOPPortalWAR/appmanager/ciop/pl?_nfpb=true&_pageLabel=P25000149031403773780227&html_tresc_root_id=405&html_tresc_id=551&html_klucz=405&html_klucz_spis=405",
+   "issue": "Newsletter CIOP-PIB Chemia i pyły 10/2026 · BIOINFO",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/chempyl/2026/10/newsletter-202610s.html",
+   "date": "2026-10-01",
+   "seen": "2026-11-11"
+  },
+  {
+   "id": "caed56755b63",
+   "src": "ciopchem",
+   "cat": "chemia",
+   "title": "Zapraszamy do zapisów na bezpłatne warsztaty z serii „SUBSTANCJE CHEMICZNE W ŚRODOWISKU PRACY – CZY WIEM, Z CZYM PRACUJĘ”, dotyczące oceny ryzyka…",
+   "lead": "Zapraszamy do zapisów na bezpłatne warsztaty z serii „SUBSTANCJE CHEMICZNE W ŚRODOWISKU PRACY – CZY WIEM, Z CZYM PRACUJĘ”, dotyczące oceny ryzyka zawodowego związanego z występowaniem i stosowaniem substancji chemicznych w środowisku pracy z uwzględnieniem substancji rakotwórczych, mutagennych i reprotoksycznych…",
+   "url": "https://www.ciop.pl/CIOPPortalWAR/appmanager/ciop/pl?_nfpb=true&_pageLabel=P14400132071346315291310&html_tresc_root_id=16487&html_tresc_id=300012590&html_klucz=16487&html_klucz_spis=16487",
+   "issue": "Newsletter CIOP-PIB Chemia i pyły 10/2026 · CHEMPYŁ",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/chempyl/2026/10/newsletter-202610s.html",
+   "date": "2026-10-01",
+   "seen": "2026-11-11"
   },
   {
    "id": "cb1253cdf1c2",
@@ -1257,6 +1460,7 @@
  ],
  "skip": [
   "02b5607e1bca",
+  "0553c1c5af34",
   "0abd279aeb99",
   "0bd95bc0165e",
   "0cbf706acf28",
@@ -1360,6 +1564,7 @@
   "d84b250fe7ae",
   "dc4b8ea5d2d9",
   "dc53194883f3",
+  "df05964c81ea",
   "df4ffa1093ad",
   "df513bc36a15",
   "e56d787fad5a",
