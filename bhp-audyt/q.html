@@ -50,6 +50,9 @@
     if(!h) throw new Error('Brak treści w kodzie. Zeskanuj kod ponownie.');
     const d = await unpack(h);
     if(d.k!=='ins') throw new Error('Nieznany rodzaj kodu.');
+    /* SEC: liczby z kodu QR jako liczby, teksty jako teksty — zabezpieczenie przed wstrzyknięciem HTML */
+    d.s = (Array.isArray(d.s)?d.s:[]).map(x=>Array.isArray(x)?[String(x[0]==null?'':x[0]), Array.isArray(x[1])?x[1].map(v=>String(v==null?'':v)):[], parseInt(x[2],10)||0, parseInt(x[3],10)||0]:['',[],0,0]);
+    d.ph = (Array.isArray(d.ph)?d.ph:[]).map(v=>String(v==null?'':v));
     document.title = d.t || 'Instrukcja BHP';
     app.innerHTML = '<span class="kick">Instrukcja BHP</span><h1>'+esc(d.t)+'</h1>'
       +'<div class="meta">'+[d.c, d.n?'nr '+d.n:'', d.d?'wprowadzona '+fmt(d.d):'', d.r?'przegląd '+fmt(d.r):''].filter(Boolean).map(x=>'<span>'+esc(x)+'</span>').join('')+'</div>'
