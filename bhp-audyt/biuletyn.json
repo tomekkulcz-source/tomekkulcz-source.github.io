@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-11T12:02:24Z",
+ "generatedAt": "2026-11-12T13:03:03Z",
  "sources": [
   {
    "id": "du",
@@ -11,7 +11,7 @@
    "ok": true,
    "found": 6,
    "new": 0,
-   "lastOk": "2026-11-11",
+   "lastOk": "2026-11-12",
    "primed": true
   },
   {
@@ -23,7 +23,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-11",
+   "lastOk": "2026-11-12",
    "primed": true
   },
   {
@@ -35,7 +35,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-11",
+   "lastOk": "2026-11-12",
    "primed": true
   },
   {
@@ -46,8 +46,8 @@
    "cat": "wiedza",
    "ok": true,
    "found": 22,
-   "new": 10,
-   "lastOk": "2026-11-11",
+   "new": 0,
+   "lastOk": "2026-11-12",
    "primed": true
   },
   {
@@ -58,8 +58,8 @@
    "cat": "chemia",
    "ok": true,
    "found": 19,
-   "new": 6,
-   "lastOk": "2026-11-11",
+   "new": 0,
+   "lastOk": "2026-11-12",
    "primed": true
   },
   {
@@ -71,7 +71,7 @@
    "ok": true,
    "found": 12,
    "new": 0,
-   "lastOk": "2026-11-11",
+   "lastOk": "2026-11-12",
    "primed": true
   },
   {
@@ -83,7 +83,7 @@
    "ok": true,
    "found": 2,
    "new": 0,
-   "lastOk": "2026-11-11",
+   "lastOk": "2026-11-12",
    "primed": true
   },
   {
@@ -95,7 +95,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-11",
+   "lastOk": "2026-11-12",
    "primed": true
   },
   {
@@ -107,7 +107,7 @@
    "ok": true,
    "found": 9,
    "new": 1,
-   "lastOk": "2026-11-11",
+   "lastOk": "2026-11-12",
    "primed": true
   },
   {
@@ -119,11 +119,21 @@
    "ok": true,
    "found": 3,
    "new": 0,
-   "lastOk": "2026-11-11",
+   "lastOk": "2026-11-12",
    "primed": true
   }
  ],
  "items": [
+  {
+   "id": "bc66639ec3c2",
+   "src": "osha",
+   "cat": "ue",
+   "title": "New on OSHwiki: behind the scenes of psychosocial risks in the audiovisual sector",
+   "lead": "Long working hours, tight deadlines and job insecurity are just some of the challenges facing workers in the audiovisual sector. A new OSHwiki article explores how demanding working conditions in film, television, radio and digital media can affect workers’ mental health and well-being.",
+   "url": "https://osha.europa.eu/en/oshnews/new-oshwiki-behind-scenes-psychosocial-risks-audiovisual-sector",
+   "date": "2026-11-12",
+   "seen": "2026-11-12"
+  },
   {
    "id": "ee44c2704370",
    "src": "osha",
@@ -1547,9 +1557,11 @@
   "c392ed3e27eb",
   "c54ee15d90eb",
   "c5e4b3113b73",
+  "c5e99c9b9e02",
   "c66205dcb563",
   "c6aeccaa1eb2",
   "c95c9d5912c2",
+  "ca0d9b2fcab0",
   "cb653817ab83",
   "cc220807dedb",
   "cc329e360f2d",
