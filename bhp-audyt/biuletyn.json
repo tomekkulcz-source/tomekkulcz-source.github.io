@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-13T12:28:18Z",
+ "generatedAt": "2026-11-14T11:43:26Z",
  "sources": [
   {
    "id": "du",
@@ -11,7 +11,7 @@
    "ok": true,
    "found": 6,
    "new": 0,
-   "lastOk": "2026-11-13",
+   "lastOk": "2026-11-14",
    "primed": true
   },
   {
@@ -23,7 +23,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-13",
+   "lastOk": "2026-11-14",
    "primed": true
   },
   {
@@ -34,8 +34,8 @@
    "cat": "pip",
    "ok": true,
    "found": 8,
-   "new": 1,
-   "lastOk": "2026-11-13",
+   "new": 0,
+   "lastOk": "2026-11-14",
    "primed": true
   },
   {
@@ -47,7 +47,7 @@
    "ok": true,
    "found": 22,
    "new": 0,
-   "lastOk": "2026-11-13",
+   "lastOk": "2026-11-14",
    "primed": true
   },
   {
@@ -59,7 +59,7 @@
    "ok": true,
    "found": 19,
    "new": 0,
-   "lastOk": "2026-11-13",
+   "lastOk": "2026-11-14",
    "primed": true
   },
   {
@@ -71,7 +71,7 @@
    "ok": true,
    "found": 12,
    "new": 0,
-   "lastOk": "2026-11-13",
+   "lastOk": "2026-11-14",
    "primed": true
   },
   {
@@ -80,9 +80,8 @@
    "full": "Ministerstwo Rodziny, Pracy i Polityki Społecznej",
    "home": "https://www.gov.pl/web/rodzina",
    "cat": "wiadomosci",
-   "ok": true,
-   "found": 2,
-   "new": 0,
+   "ok": false,
+   "error": "URLError: <urlopen error [Errno 101] Network is unreachable>",
    "lastOk": "2026-11-13",
    "primed": true
   },
@@ -95,7 +94,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-13",
+   "lastOk": "2026-11-14",
    "primed": true
   },
   {
@@ -107,7 +106,7 @@
    "ok": true,
    "found": 9,
    "new": 0,
-   "lastOk": "2026-11-13",
+   "lastOk": "2026-11-14",
    "primed": true
   },
   {
@@ -116,9 +115,8 @@
    "full": "Komenda Główna Państwowej Straży Pożarnej",
    "home": "https://www.gov.pl/web/kgpsp",
    "cat": "ppoz",
-   "ok": true,
-   "found": 3,
-   "new": 0,
+   "ok": false,
+   "error": "URLError: <urlopen error [Errno 101] Network is unreachable>",
    "lastOk": "2026-11-13",
    "primed": true
   }
