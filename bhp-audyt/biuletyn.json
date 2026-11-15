@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-14T11:43:26Z",
+ "generatedAt": "2026-11-15T12:10:47Z",
  "sources": [
   {
    "id": "du",
@@ -11,7 +11,7 @@
    "ok": true,
    "found": 6,
    "new": 0,
-   "lastOk": "2026-11-14",
+   "lastOk": "2026-11-15",
    "primed": true
   },
   {
@@ -23,7 +23,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-14",
+   "lastOk": "2026-11-15",
    "primed": true
   },
   {
@@ -33,9 +33,9 @@
    "home": "https://www.pip.gov.pl/",
    "cat": "pip",
    "ok": true,
-   "found": 8,
+   "found": 0,
    "new": 0,
-   "lastOk": "2026-11-14",
+   "lastOk": "2026-11-15",
    "primed": true
   },
   {
@@ -47,7 +47,7 @@
    "ok": true,
    "found": 22,
    "new": 0,
-   "lastOk": "2026-11-14",
+   "lastOk": "2026-11-15",
    "primed": true
   },
   {
@@ -59,7 +59,7 @@
    "ok": true,
    "found": 19,
    "new": 0,
-   "lastOk": "2026-11-14",
+   "lastOk": "2026-11-15",
    "primed": true
   },
   {
@@ -71,7 +71,7 @@
    "ok": true,
    "found": 12,
    "new": 0,
-   "lastOk": "2026-11-14",
+   "lastOk": "2026-11-15",
    "primed": true
   },
   {
@@ -94,7 +94,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-14",
+   "lastOk": "2026-11-15",
    "primed": true
   },
   {
@@ -106,7 +106,7 @@
    "ok": true,
    "found": 9,
    "new": 0,
-   "lastOk": "2026-11-14",
+   "lastOk": "2026-11-15",
    "primed": true
   },
   {
