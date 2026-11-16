@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-15T12:10:47Z",
+ "generatedAt": "2026-11-16T13:04:07Z",
  "sources": [
   {
    "id": "du",
@@ -11,7 +11,7 @@
    "ok": true,
    "found": 6,
    "new": 0,
-   "lastOk": "2026-11-15",
+   "lastOk": "2026-11-16",
    "primed": true
   },
   {
@@ -23,7 +23,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-15",
+   "lastOk": "2026-11-16",
    "primed": true
   },
   {
@@ -35,7 +35,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-15",
+   "lastOk": "2026-11-16",
    "primed": true
   },
   {
@@ -47,7 +47,7 @@
    "ok": true,
    "found": 22,
    "new": 0,
-   "lastOk": "2026-11-15",
+   "lastOk": "2026-11-16",
    "primed": true
   },
   {
@@ -59,7 +59,7 @@
    "ok": true,
    "found": 19,
    "new": 0,
-   "lastOk": "2026-11-15",
+   "lastOk": "2026-11-16",
    "primed": true
   },
   {
@@ -71,7 +71,7 @@
    "ok": true,
    "found": 12,
    "new": 0,
-   "lastOk": "2026-11-15",
+   "lastOk": "2026-11-16",
    "primed": true
   },
   {
@@ -94,7 +94,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-15",
+   "lastOk": "2026-11-16",
    "primed": true
   },
   {
@@ -104,9 +104,9 @@
    "home": "https://osha.europa.eu/pl",
    "cat": "ue",
    "ok": true,
-   "found": 9,
-   "new": 0,
-   "lastOk": "2026-11-15",
+   "found": 10,
+   "new": 1,
+   "lastOk": "2026-11-16",
    "primed": true
   },
   {
@@ -122,6 +122,16 @@
   }
  ],
  "items": [
+  {
+   "id": "4a73004483da",
+   "src": "osha",
+   "cat": "ue",
+   "title": "New EIGE poster exhibition highlights violence against women as a workplace issue",
+   "lead": "According to the European Institute for Gender Equality (EIGE), one in three women in the EU have experienced violence. This has significant consequences in the workplace, affecting women's safety, wellbeing, participation in the labour market, productivity and economic independence.",
+   "url": "https://osha.europa.eu/en/oshnews/new-eige-poster-exhibition-highlights-violence-against-women-workplace-issue",
+   "date": "2026-11-16",
+   "seen": "2026-11-16"
+  },
   {
    "id": "bc66639ec3c2",
    "src": "osha",
@@ -1502,6 +1512,7 @@
   "31ea1ea974d5",
   "31eb6736be41",
   "32dbdc2ed2e6",
+  "33e6cef2e1f0",
   "33ecc8bacfe1",
   "3649bd39f41a",
   "36ee1d41678a",
