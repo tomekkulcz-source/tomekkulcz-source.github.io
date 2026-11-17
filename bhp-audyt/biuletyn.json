@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-16T13:04:07Z",
+ "generatedAt": "2026-11-17T13:43:49Z",
  "sources": [
   {
    "id": "du",
@@ -11,7 +11,7 @@
    "ok": true,
    "found": 6,
    "new": 0,
-   "lastOk": "2026-11-16",
+   "lastOk": "2026-11-17",
    "primed": true
   },
   {
@@ -23,7 +23,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-16",
+   "lastOk": "2026-11-17",
    "primed": true
   },
   {
@@ -35,7 +35,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-16",
+   "lastOk": "2026-11-17",
    "primed": true
   },
   {
@@ -47,7 +47,7 @@
    "ok": true,
    "found": 22,
    "new": 0,
-   "lastOk": "2026-11-16",
+   "lastOk": "2026-11-17",
    "primed": true
   },
   {
@@ -59,7 +59,7 @@
    "ok": true,
    "found": 19,
    "new": 0,
-   "lastOk": "2026-11-16",
+   "lastOk": "2026-11-17",
    "primed": true
   },
   {
@@ -71,7 +71,7 @@
    "ok": true,
    "found": 12,
    "new": 0,
-   "lastOk": "2026-11-16",
+   "lastOk": "2026-11-17",
    "primed": true
   },
   {
@@ -80,9 +80,10 @@
    "full": "Ministerstwo Rodziny, Pracy i Polityki Społecznej",
    "home": "https://www.gov.pl/web/rodzina",
    "cat": "wiadomosci",
-   "ok": false,
-   "error": "URLError: <urlopen error [Errno 101] Network is unreachable>",
-   "lastOk": "2026-11-13",
+   "ok": true,
+   "found": 2,
+   "new": 0,
+   "lastOk": "2026-11-17",
    "primed": true
   },
   {
@@ -94,7 +95,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-16",
+   "lastOk": "2026-11-17",
    "primed": true
   },
   {
@@ -105,8 +106,8 @@
    "cat": "ue",
    "ok": true,
    "found": 10,
-   "new": 1,
-   "lastOk": "2026-11-16",
+   "new": 0,
+   "lastOk": "2026-11-17",
    "primed": true
   },
   {
@@ -115,9 +116,10 @@
    "full": "Komenda Główna Państwowej Straży Pożarnej",
    "home": "https://www.gov.pl/web/kgpsp",
    "cat": "ppoz",
-   "ok": false,
-   "error": "URLError: <urlopen error [Errno 101] Network is unreachable>",
-   "lastOk": "2026-11-13",
+   "ok": true,
+   "found": 3,
+   "new": 0,
+   "lastOk": "2026-11-17",
    "primed": true
   }
  ],
@@ -1523,6 +1525,7 @@
   "41562f8847ca",
   "42c4f0f3ed16",
   "4301d10b80d3",
+  "46badc547497",
   "483ddc91c43b",
   "485aa98c37dc",
   "4a5897394ae6",
@@ -1568,6 +1571,7 @@
   "b1183e20ca33",
   "b29de201aae1",
   "b5e013180f1c",
+  "b6b369a1d899",
   "b7baf18fd6db",
   "be6be99f80f0",
   "becf71f6de8e",
@@ -1601,6 +1605,8 @@
   "e56d787fad5a",
   "e775ca7fab23",
   "ea9be4be437b",
+  "eb13b7798074",
+  "f6f25f62855b",
   "fa1badb1d4e7",
   "fb794d8c07a1",
   "fc98f1d26d6d",
