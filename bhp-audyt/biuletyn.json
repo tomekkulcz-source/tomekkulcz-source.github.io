@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-17T13:43:49Z",
+ "generatedAt": "2026-11-18T13:20:52Z",
  "sources": [
   {
    "id": "du",
@@ -11,7 +11,7 @@
    "ok": true,
    "found": 6,
    "new": 0,
-   "lastOk": "2026-11-17",
+   "lastOk": "2026-11-18",
    "primed": true
   },
   {
@@ -23,7 +23,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-17",
+   "lastOk": "2026-11-18",
    "primed": true
   },
   {
@@ -33,9 +33,9 @@
    "home": "https://www.pip.gov.pl/",
    "cat": "pip",
    "ok": true,
-   "found": 0,
-   "new": 0,
-   "lastOk": "2026-11-17",
+   "found": 8,
+   "new": 2,
+   "lastOk": "2026-11-18",
    "primed": true
   },
   {
@@ -47,7 +47,7 @@
    "ok": true,
    "found": 22,
    "new": 0,
-   "lastOk": "2026-11-17",
+   "lastOk": "2026-11-18",
    "primed": true
   },
   {
@@ -59,7 +59,7 @@
    "ok": true,
    "found": 19,
    "new": 0,
-   "lastOk": "2026-11-17",
+   "lastOk": "2026-11-18",
    "primed": true
   },
   {
@@ -71,7 +71,7 @@
    "ok": true,
    "found": 12,
    "new": 0,
-   "lastOk": "2026-11-17",
+   "lastOk": "2026-11-18",
    "primed": true
   },
   {
@@ -80,9 +80,8 @@
    "full": "Ministerstwo Rodziny, Pracy i Polityki Społecznej",
    "home": "https://www.gov.pl/web/rodzina",
    "cat": "wiadomosci",
-   "ok": true,
-   "found": 2,
-   "new": 0,
+   "ok": false,
+   "error": "URLError: <urlopen error [Errno 101] Network is unreachable>",
    "lastOk": "2026-11-17",
    "primed": true
   },
@@ -95,7 +94,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-17",
+   "lastOk": "2026-11-18",
    "primed": true
   },
   {
@@ -107,7 +106,7 @@
    "ok": true,
    "found": 10,
    "new": 0,
-   "lastOk": "2026-11-17",
+   "lastOk": "2026-11-18",
    "primed": true
   },
   {
@@ -116,14 +115,33 @@
    "full": "Komenda Główna Państwowej Straży Pożarnej",
    "home": "https://www.gov.pl/web/kgpsp",
    "cat": "ppoz",
-   "ok": true,
-   "found": 3,
-   "new": 0,
+   "ok": false,
+   "error": "URLError: <urlopen error [Errno 101] Network is unreachable>",
    "lastOk": "2026-11-17",
    "primed": true
   }
  ],
  "items": [
+  {
+   "id": "4aa77354dfa3",
+   "src": "pip",
+   "cat": "pip",
+   "title": "O transparentności wynagrodzeń na Radzie Ochrony Pracy",
+   "lead": "– Jak wskazują skargi wpływające do Inspekcji Pracy, nie sposób mówić o zapewnieniu „świadomego i przejrzystego negocjowania” warunków wynagradzania, gdy pracodawca rezygnuje podczas rekrutacji z ujawnienia wysokości proponowanego wynagrodzenia, wymagając zarazem wskazania przez osoby ubiegające się o zatrudnienie…",
+   "url": "https://www.pip.gov.pl/aktualnosci/o-transparentnosci-wynagrodzen-na-radzie-ochrony-pracy",
+   "date": "2026-11-18",
+   "seen": "2026-11-18"
+  },
+  {
+   "id": "0f545e27dee4",
+   "src": "pip",
+   "cat": "pip",
+   "title": "Awaria infolinii PIP",
+   "lead": "W dniu 16.11.2026 r. nastąpiła awaria infolinii PIP pod numerem 22 266 79 78, gdzie udzielane są porady z zakresu legalności zatrudniania obywateli polskich i cudzoziemców. Za zaistniałe utrudnienia serdecznie przepraszamy.",
+   "url": "https://www.pip.gov.pl/aktualnosci/awaria-infolinii-pip",
+   "date": "2026-11-16",
+   "seen": "2026-11-18"
+  },
   {
    "id": "4a73004483da",
    "src": "osha",
