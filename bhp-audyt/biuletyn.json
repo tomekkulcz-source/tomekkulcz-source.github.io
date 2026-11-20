@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-19T13:41:01Z",
+ "generatedAt": "2026-11-20T13:20:59Z",
  "sources": [
   {
    "id": "du",
@@ -11,7 +11,7 @@
    "ok": true,
    "found": 6,
    "new": 0,
-   "lastOk": "2026-11-19",
+   "lastOk": "2026-11-20",
    "primed": true
   },
   {
@@ -23,7 +23,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-19",
+   "lastOk": "2026-11-20",
    "primed": true
   },
   {
@@ -33,9 +33,9 @@
    "home": "https://www.pip.gov.pl/",
    "cat": "pip",
    "ok": true,
-   "found": 0,
+   "found": 8,
    "new": 0,
-   "lastOk": "2026-11-19",
+   "lastOk": "2026-11-20",
    "primed": true
   },
   {
@@ -47,7 +47,7 @@
    "ok": true,
    "found": 22,
    "new": 0,
-   "lastOk": "2026-11-19",
+   "lastOk": "2026-11-20",
    "primed": true
   },
   {
@@ -59,7 +59,7 @@
    "ok": true,
    "found": 19,
    "new": 0,
-   "lastOk": "2026-11-19",
+   "lastOk": "2026-11-20",
    "primed": true
   },
   {
@@ -69,9 +69,9 @@
    "home": "https://www.udt.gov.pl/",
    "cat": "wiadomosci",
    "ok": true,
-   "found": 12,
-   "new": 0,
-   "lastOk": "2026-11-19",
+   "found": 14,
+   "new": 2,
+   "lastOk": "2026-11-20",
    "primed": true
   },
   {
@@ -83,7 +83,7 @@
    "ok": true,
    "found": 2,
    "new": 0,
-   "lastOk": "2026-11-19",
+   "lastOk": "2026-11-20",
    "primed": true
   },
   {
@@ -95,7 +95,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-19",
+   "lastOk": "2026-11-20",
    "primed": true
   },
   {
@@ -106,8 +106,8 @@
    "cat": "ue",
    "ok": true,
    "found": 10,
-   "new": 0,
-   "lastOk": "2026-11-19",
+   "new": 1,
+   "lastOk": "2026-11-20",
    "primed": true
   },
   {
@@ -117,13 +117,45 @@
    "home": "https://www.gov.pl/web/kgpsp",
    "cat": "ppoz",
    "ok": true,
-   "found": 2,
+   "found": 1,
    "new": 0,
-   "lastOk": "2026-11-19",
+   "lastOk": "2026-11-20",
    "primed": true
   }
  ],
  "items": [
+  {
+   "id": "5b6fdbb915c8",
+   "src": "udt",
+   "cat": "wiadomosci",
+   "title": "Poradnik cyberbezpieczeństwa urządzeń podlegających dozorowi technicznemu",
+   "lead": "Urząd Dozoru Technicznego (UDT) jest państwową osobą prawną działającą w obszarze bezpieczeństwa urządzeń technicznych. WSPIERAMY ROZWÓJ. DBAMY O BEZPIECZEŃSTWO.",
+   "url": "https://www.udt.gov.pl/aktualnosci/poradnik-cyberbezpieczenstwa-urzadzen-podlegajacych-dozorowi-technicznemu",
+   "date": "2026-11-20",
+   "seen": "2026-11-20",
+   "dateGuess": true
+  },
+  {
+   "id": "620538d80dec",
+   "src": "udt",
+   "cat": "wiadomosci",
+   "title": "Dokument WUDT-LAB 4/2026 „Warunki techniczne Urzędu Dozoru Technicznego. Uznawanie laboratoriów. Ocena kompetencji laboratoriów badawczych\"",
+   "lead": "Urząd Dozoru Technicznego (UDT) jest państwową osobą prawną działającą w obszarze bezpieczeństwa urządzeń technicznych. WSPIERAMY ROZWÓJ. DBAMY O BEZPIECZEŃSTWO.",
+   "url": "https://www.udt.gov.pl/aktualnosci/dokument-wudt-lab-4-2026-warunki-techniczne-urzedu-dozoru-technicznego-uznawanie-laboratoriow-ocena-kompetencji-laboratoriow-badawczych",
+   "date": "2026-11-20",
+   "seen": "2026-11-20",
+   "dateGuess": true
+  },
+  {
+   "id": "7de6c1759026",
+   "src": "osha",
+   "cat": "ue",
+   "title": "Health & Safety Review highlights the new Healthy Workplaces Campaign",
+   "lead": "Health & Safety Review’s Margaret Kirby, EU-OSHA’s Irish media partner, has recently published two articles covering our new Healthy Workplaces Campaign 2026-28 ‘Together for mental health at work’ and its launch in Brussels last month.",
+   "url": "https://osha.europa.eu/en/oshnews/health-safety-review-highlights-new-healthy-workplaces-campaign",
+   "date": "2026-11-19",
+   "seen": "2026-11-20"
+  },
   {
    "id": "4aa77354dfa3",
    "src": "pip",
@@ -1538,6 +1570,7 @@
   "33ecc8bacfe1",
   "3649bd39f41a",
   "36ee1d41678a",
+  "3c633b9379a0",
   "3dbe803d7501",
   "3df011e08b6b",
   "3e94e5ed8d95",
@@ -1585,6 +1618,7 @@
   "97e64a4e73d2",
   "98180715eebc",
   "998530415097",
+  "a112269fba9d",
   "a139ef0e16b8",
   "a35cd1ee67b6",
   "a99416ba801e",
@@ -1596,6 +1630,7 @@
   "b7baf18fd6db",
   "be6be99f80f0",
   "becf71f6de8e",
+  "bf3837359c29",
   "bf882ec8d010",
   "c2a1b2558f75",
   "c392ed3e27eb",
@@ -1630,6 +1665,7 @@
   "e775ca7fab23",
   "ea9be4be437b",
   "eb13b7798074",
+  "effbff2c3049",
   "f6f25f62855b",
   "fa1badb1d4e7",
   "fb794d8c07a1",
