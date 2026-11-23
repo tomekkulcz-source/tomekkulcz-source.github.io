@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-21T12:54:28Z",
+ "generatedAt": "2026-11-23T15:06:46Z",
  "sources": [
   {
    "id": "du",
@@ -11,7 +11,7 @@
    "ok": true,
    "found": 5,
    "new": 0,
-   "lastOk": "2026-11-21",
+   "lastOk": "2026-11-23",
    "primed": true
   },
   {
@@ -23,7 +23,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-21",
+   "lastOk": "2026-11-23",
    "primed": true
   },
   {
@@ -35,7 +35,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-21",
+   "lastOk": "2026-11-23",
    "primed": true
   },
   {
@@ -47,7 +47,7 @@
    "ok": true,
    "found": 22,
    "new": 0,
-   "lastOk": "2026-11-21",
+   "lastOk": "2026-11-23",
    "primed": true
   },
   {
@@ -59,7 +59,7 @@
    "ok": true,
    "found": 19,
    "new": 0,
-   "lastOk": "2026-11-21",
+   "lastOk": "2026-11-23",
    "primed": true
   },
   {
@@ -71,7 +71,7 @@
    "ok": true,
    "found": 14,
    "new": 0,
-   "lastOk": "2026-11-21",
+   "lastOk": "2026-11-23",
    "primed": true
   },
   {
@@ -83,7 +83,7 @@
    "ok": true,
    "found": 2,
    "new": 0,
-   "lastOk": "2026-11-21",
+   "lastOk": "2026-11-23",
    "primed": true
   },
   {
@@ -95,7 +95,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-21",
+   "lastOk": "2026-11-23",
    "primed": true
   },
   {
@@ -107,7 +107,7 @@
    "ok": true,
    "found": 10,
    "new": 0,
-   "lastOk": "2026-11-21",
+   "lastOk": "2026-11-23",
    "primed": true
   },
   {
@@ -118,12 +118,22 @@
    "cat": "ppoz",
    "ok": true,
    "found": 1,
-   "new": 0,
-   "lastOk": "2026-11-21",
+   "new": 1,
+   "lastOk": "2026-11-23",
    "primed": true
   }
  ],
  "items": [
+  {
+   "id": "4bc99947ceb3",
+   "src": "psp",
+   "cat": "ppoz",
+   "title": "„Czujka na straży Twojego bezpieczeństwa!” – apelujemy o montaż czujki dymu i czujki tlenku węgla w domach i mieszkaniach!",
+   "lead": "",
+   "url": "https://www.gov.pl/web/kgpsp/czujka-na-strazy-twojego-bezpieczenstwa--apelujemy-o-montaz-czujki-dymu-i-czujki-tlenku-wegla-w-domach-i-mieszkaniach",
+   "date": "2026-11-23",
+   "seen": "2026-11-23"
+  },
   {
    "id": "5b6fdbb915c8",
    "src": "udt",
@@ -1578,12 +1588,14 @@
   "41562f8847ca",
   "42c4f0f3ed16",
   "4301d10b80d3",
+  "457e64acf1c9",
   "46badc547497",
   "483ddc91c43b",
   "485aa98c37dc",
   "4a5897394ae6",
   "4bd417eaefb1",
   "4d26f7cbd0b0",
+  "57ee87291177",
   "5886aa860e56",
   "58e5a9a4265f",
   "5d1b6d20d792",
