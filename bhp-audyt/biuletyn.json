@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-23T15:06:46Z",
+ "generatedAt": "2026-11-24T15:04:55Z",
  "sources": [
   {
    "id": "du",
@@ -11,7 +11,7 @@
    "ok": true,
    "found": 5,
    "new": 0,
-   "lastOk": "2026-11-23",
+   "lastOk": "2026-11-24",
    "primed": true
   },
   {
@@ -23,7 +23,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-23",
+   "lastOk": "2026-11-24",
    "primed": true
   },
   {
@@ -35,7 +35,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-23",
+   "lastOk": "2026-11-24",
    "primed": true
   },
   {
@@ -46,8 +46,8 @@
    "cat": "wiedza",
    "ok": true,
    "found": 22,
-   "new": 0,
-   "lastOk": "2026-11-23",
+   "new": 6,
+   "lastOk": "2026-11-24",
    "primed": true
   },
   {
@@ -57,9 +57,9 @@
    "home": "https://www.ciop.pl/newsletter-bhp",
    "cat": "chemia",
    "ok": true,
-   "found": 19,
-   "new": 0,
-   "lastOk": "2026-11-23",
+   "found": 20,
+   "new": 6,
+   "lastOk": "2026-11-24",
    "primed": true
   },
   {
@@ -69,9 +69,9 @@
    "home": "https://www.udt.gov.pl/",
    "cat": "wiadomosci",
    "ok": true,
-   "found": 14,
-   "new": 0,
-   "lastOk": "2026-11-23",
+   "found": 15,
+   "new": 1,
+   "lastOk": "2026-11-24",
    "primed": true
   },
   {
@@ -83,7 +83,7 @@
    "ok": true,
    "found": 2,
    "new": 0,
-   "lastOk": "2026-11-23",
+   "lastOk": "2026-11-24",
    "primed": true
   },
   {
@@ -95,7 +95,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-23",
+   "lastOk": "2026-11-24",
    "primed": true
   },
   {
@@ -107,7 +107,7 @@
    "ok": true,
    "found": 10,
    "new": 0,
-   "lastOk": "2026-11-23",
+   "lastOk": "2026-11-24",
    "primed": true
   },
   {
@@ -118,8 +118,8 @@
    "cat": "ppoz",
    "ok": true,
    "found": 1,
-   "new": 1,
-   "lastOk": "2026-11-23",
+   "new": 0,
+   "lastOk": "2026-11-24",
    "primed": true
   }
  ],
@@ -133,6 +133,16 @@
    "url": "https://www.gov.pl/web/kgpsp/czujka-na-strazy-twojego-bezpieczenstwa--apelujemy-o-montaz-czujki-dymu-i-czujki-tlenku-wegla-w-domach-i-mieszkaniach",
    "date": "2026-11-23",
    "seen": "2026-11-23"
+  },
+  {
+   "id": "e786d66a5754",
+   "src": "udt",
+   "cat": "wiadomosci",
+   "title": "Komunikat – aktualizacja przykładowych pytań egzaminacyjnych w zakresie obsługi wózków jezdniowych podnośnikowych",
+   "lead": "Urząd Dozoru Technicznego (UDT) jest państwową osobą prawną działającą w obszarze bezpieczeństwa urządzeń technicznych. WSPIERAMY ROZWÓJ. DBAMY O BEZPIECZEŃSTWO.",
+   "url": "https://www.udt.gov.pl/aktualnosci/komunikat---aktualizacja-przykladowych-pytan-egzaminacyjnych-w-zakresie-obslugi-wozkow-jezdniowych-podnosnikowych",
+   "date": "2026-11-20",
+   "seen": "2026-11-24"
   },
   {
    "id": "5b6fdbb915c8",
@@ -296,6 +306,150 @@
    "url": "https://www.gov.pl/web/kgpsp/aplikacje-gdzie-sie-ukryc-pl-mozesz-juz-pobrac-na-telefon",
    "date": "2026-11-02",
    "seen": "2026-11-02"
+  },
+  {
+   "id": "ce6db66d632f",
+   "src": "ciop",
+   "cat": "wiedza",
+   "title": "Skrócony czas pracy – korzyści dla zdrowia, wyzwania dla pracodawców",
+   "lead": "Jak skrócenie czasu pracy wpływa na zdrowie i dobrostan pracowników? Jakie wiążą się z nim konsekwencje ekonomiczne i prawne? Zagadnienia te omawiają dwa poniższe raporty, które powstały w ramach projektu „Skrócony czas pracy – od diagnozy do wdrożenia”. Jego celem jest opracowanie narzędzi ułatwiających organizacjom…",
+   "url": "https://czaspracy.info.pl/wp-content/uploads/2026/09/Raport1-Diagnoza-wplywu-skrocenia-czasu-pracyna-zdrowie-oraz-funkcjonowanie-pracownikow.pdf",
+   "issue": "Newsletter CIOP-PIB BHP 11/2026",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/bhp/2026/11/newsletter-bhp202611s.html",
+   "date": "2026-11-01",
+   "seen": "2026-11-24"
+  },
+  {
+   "id": "05b46e6c1d9f",
+   "src": "ciop",
+   "cat": "wiedza",
+   "title": "Karty Liderów Bezpiecznej Pracy 2026 – poznaj wyróżnione organizacje",
+   "lead": "22 października 2026 r. podczas uroczystej gali wręczono Złote, Srebrne i Zielone Karty Liderów Bezpiecznej Pracy oraz nominacje dla nowych członków Forum Liderów Bezpiecznej Pracy. Te wyróżnienia stanowią wyraz uznania dla przedsiębiorstw i instytucji, które konsekwentnie podejmują działania na rzecz poprawy warunków…",
+   "url": "https://www.ciop.pl/CIOPPortalWAR/appmanager/ciop/pl?_nfpb=true&_pageLabel=P30002831335688236754&html_tresc_root_id=11193&html_tresc_id=11202&html_klucz=158&html_klucz_spis",
+   "issue": "Newsletter CIOP-PIB BHP 11/2026",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/bhp/2026/11/newsletter-bhp202611s.html",
+   "date": "2026-11-01",
+   "seen": "2026-11-24"
+  },
+  {
+   "id": "fb3b2c0ff3ee",
+   "src": "ciop",
+   "cat": "wiedza",
+   "title": "Szkolenia CIOP-PIB w grudniu – pięć tematów ważnych dla bhp",
+   "lead": "Jak skutecznie zadbać o bezpieczeństwo i zdrowie pracowników? Zapraszamy na nasze szkolenia. W programie:",
+   "url": "https://www.ciop.pl/CIOPPortalWAR/appmanager/ciop/pl?_nfpb=true&_pageLabel=P27200153781409747183354&html_tresc_root_id=28414&html_tresc_id=2124&html_klucz=28414&html_klucz_spis",
+   "issue": "Newsletter CIOP-PIB BHP 11/2026",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/bhp/2026/11/newsletter-bhp202611s.html",
+   "date": "2026-11-01",
+   "seen": "2026-11-24"
+  },
+  {
+   "id": "c7a3849a4177",
+   "src": "ciop",
+   "cat": "wiedza",
+   "title": "Nanoobiekty w miejscu pracy – bezpłatne badania dla przedsiębiorstw",
+   "lead": "Nanoobiekty są niewidoczne gołym okiem, ale mogą negatywnie wpływać na zdrowie pracowników, m.in. na układ oddechowy i układ krążenia. CIOP-PIB zaprasza przedsiębiorstwa do udziału w bezpłatnych badaniach obejmujących pomiary stężenia liczbowego nanoobiektów oraz stężenia masowego pyłu we frakcjach wdychalnej i…",
+   "url": "https://www.ciop.pl/CIOPPortalWAR/file/98446/Wspolpraca-analiza-frakcji-nano-w-aerozolach_2.pdf",
+   "issue": "Newsletter CIOP-PIB BHP 11/2026",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/bhp/2026/11/newsletter-bhp202611s.html",
+   "date": "2026-11-01",
+   "seen": "2026-11-24"
+  },
+  {
+   "id": "d7205ee3f12a",
+   "src": "ciop",
+   "cat": "wiedza",
+   "title": "Powietrze w szkołach pod lupą naukowców CIOP-PIB",
+   "lead": "Czym oddychają uczniowie i pracownicy szkół? Od 2026 r. CIOP-PIB prowadzi trzyletnie badania jakości powietrza w budynkach szkolnych. Naukowcy analizują stężenia czynników chemicznych, pyłowych i biologicznych oraz wpływ zanieczyszczeń zewnętrznych na jakość powietrza w pomieszczeniach. Wyniki mają ułatwić ocenę…",
+   "url": "https://www.ciop.pl/CIOPPortalWAR/file/102546/Badania_w_szkolach-01-AS-06.pdf",
+   "issue": "Newsletter CIOP-PIB BHP 11/2026",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/bhp/2026/11/newsletter-bhp202611s.html",
+   "date": "2026-11-01",
+   "seen": "2026-11-24"
+  },
+  {
+   "id": "4efeca310b7d",
+   "src": "ciop",
+   "cat": "wiedza",
+   "title": "Bhp w praktyce – studia podyplomowe CIOP-PIB",
+   "lead": "Trwa rekrutacja na 93. edycję studiów podyplomowych podyplomowych „Bezpieczeństwo i ochrona człowieka w środowisku pracy” w CIOP-PIB. Zajęcia rozpoczną się 16 kwietnia 2027 r. Program łączy wiedzę o przepisach bhp z praktycznymi umiejętnościami, m.in. wykonywaniem pomiarów przy użyciu specjalistycznego sprzętu…",
+   "url": "https://www.ciop.pl/CIOPPortalWAR/appmanager/ciop/pl?_nfpb=true&_pageLabel=P23400115881398244087678&html_tresc_root_id=28413&html_tresc_id=15&html_klucz=28413&html_klucz_spis",
+   "issue": "Newsletter CIOP-PIB BHP 11/2026",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/bhp/2026/11/newsletter-bhp202611s.html",
+   "date": "2026-11-01",
+   "seen": "2026-11-24"
+  },
+  {
+   "id": "25b6a6db2c8a",
+   "src": "ciopchem",
+   "cat": "chemia",
+   "title": "19 listopada 2026 r. wchodzi w życie Dyrektywa Parlamentu Europejskiego i Rady (UE) 2026/2450 z dnia 21 października 2026 r. zmieniająca dyrektywę…",
+   "lead": "19 listopada 2026 r. wchodzi w życie Dyrektywa Parlamentu Europejskiego i Rady (UE) 2026/2450 z dnia 21 października 2026 r. zmieniająca dyrektywę 2004/37/WE w sprawie ochrony pracowników przed zagrożeniem dotyczącym narażenia na działanie czynników rakotwórczych, mutagenów lub substancji reprotoksycznych podczas…",
+   "url": "https://eur-lex.europa.eu/legal-content/pl/ALL/?uri=CELEX:32026L2450",
+   "issue": "Newsletter CIOP-PIB Chemia i pyły 11/2026 · Aktualności",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/chempyl/2026/11/newsletter-202611s.html",
+   "date": "2026-11-01",
+   "seen": "2026-11-24"
+  },
+  {
+   "id": "8120d9ce118f",
+   "src": "ciopchem",
+   "cat": "chemia",
+   "title": "29 października 2026 r. w Głównym Inspektoracie Sanitarnym powołano Interdyscyplinarny Zespół do spraw problematyki „Jedno Zdrowie” („One Health”).",
+   "lead": "",
+   "url": "https://www.gov.pl/web/gis/w-glownym-inspektoracie-sanitarnym-powolano-interdyscyplinarny-zespol-do-spraw-problematyki-jedno-zdrowie-one-health",
+   "issue": "Newsletter CIOP-PIB Chemia i pyły 11/2026 · Aktualności",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/chempyl/2026/11/newsletter-202611s.html",
+   "date": "2026-11-01",
+   "seen": "2026-11-24"
+  },
+  {
+   "id": "5300a94d3987",
+   "src": "ciopchem",
+   "cat": "chemia",
+   "title": "W październiku 2026 r. opublikowano tekst jednolity rozporządzenia Rady Ministrów w sprawie chorób zawodowych (Dz.U. z 2026 r. poz. 1297).",
+   "lead": "Dokument porządkuje aktualne brzmienie przepisów dotyczących chorób zawodowych, w tym chorób mogących mieć związek z narażeniem na czynniki biologiczne.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2026/1297/text.pdf",
+   "issue": "Newsletter CIOP-PIB Chemia i pyły 11/2026 · Aktualności",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/chempyl/2026/11/newsletter-202611s.html",
+   "date": "2026-11-01",
+   "seen": "2026-11-24"
+  },
+  {
+   "id": "7f484d2cb5b4",
+   "src": "ciopchem",
+   "cat": "chemia",
+   "title": "Naukowcy CIOP-PIB badają jakość powietrza w budynkach.",
+   "lead": "Kraje Unii Europejskiej przyjęły długoterminowe strategie renowacji istniejących budynków. Budynki powinny charakteryzować się niemal zerowym zużyciem energii. Jednocześnie istnieje ryzyko, że dążenie do energooszczędności może negatywnie wpłynąć na jakość powietrza i klimat w pomieszczeniach. Zapraszamy do współpracy.",
+   "url": "https://www.ciop.pl/CIOPPortalWAR/file/102647/I_BP_08_oferta_badan_jakosci_powietrza_w_budynkach.pdf",
+   "issue": "Newsletter CIOP-PIB Chemia i pyły 11/2026 · Aktualności",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/chempyl/2026/11/newsletter-202611s.html",
+   "date": "2026-11-01",
+   "seen": "2026-11-24"
+  },
+  {
+   "id": "e049939e034b",
+   "src": "ciopchem",
+   "cat": "chemia",
+   "title": "Zachęcamy do zapoznania się z materiałem informacyjnym dotyczącym ograniczania narażenia na bakterie z rodzaju Legionella.",
+   "lead": "W materiale przedstawiono najważniejsze informacje dotyczące potencjalnych źródeł zagrożenia, zasad profilaktyki oraz działań ograniczających ryzyko namnażania się bakterii i zakażenia. Materiał został umieszczony w zakładce „Warto wiedzieć” w bazie BioInfo. Zachęcamy do zapoznania się z jego treścią.",
+   "url": "https://www.ciop.pl/CIOPPortalWAR/appmanager/ciop/pl?_nfpb=true&_pageLabel=P25000149031403773780227&html_tresc_root_id=405&html_tresc_id=300014338&html_klucz=405&html_klucz_spis=405",
+   "issue": "Newsletter CIOP-PIB Chemia i pyły 11/2026 · BIOINFO",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/chempyl/2026/11/newsletter-202611s.html",
+   "date": "2026-11-01",
+   "seen": "2026-11-24"
+  },
+  {
+   "id": "01586dd4fa32",
+   "src": "ciopchem",
+   "cat": "chemia",
+   "title": "Zapraszamy do zapoznania się z infografiką „Substancje chemiczne w środowisku pracy - czy wiem z czym pracuję? ”, której celem jest wprowadzenie w…",
+   "lead": "Zapraszamy do zapoznania się z infografiką „Substancje chemiczne w środowisku pracy - czy wiem z czym pracuję? ”, której celem jest wprowadzenie w tematykę zagrożeń chemicznych w środowisku pracy.",
+   "url": "https://www.ciop.pl/CIOPPortalWAR/appmanager/ciop/pl?_nfpb=true&_pageLabel=P14400132071346315291310&html_tresc_root_id=16487&html_tresc_id=300017865&html_klucz=16487&html_klucz_spis=16487",
+   "issue": "Newsletter CIOP-PIB Chemia i pyły 11/2026 · CHEMPYŁ",
+   "issueUrl": "https://www.ciop.pl/CIOPPortalWAR/static/pz_ciop/newsletter/chempyl/2026/11/newsletter-202611s.html",
+   "date": "2026-11-01",
+   "seen": "2026-11-24"
   },
   {
    "id": "9abebd49f4d6",
@@ -1551,6 +1705,7 @@
   }
  ],
  "skip": [
+  "01bff9ed6f4a",
   "02b5607e1bca",
   "0553c1c5af34",
   "0abd279aeb99",
@@ -1628,6 +1783,7 @@
   "8fe30a9f525b",
   "92b86930b4fa",
   "932215b17613",
+  "97575685999e",
   "97e64a4e73d2",
   "98180715eebc",
   "998530415097",
