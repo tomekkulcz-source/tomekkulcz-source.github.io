@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-24T15:04:55Z",
+ "generatedAt": "2026-11-25T14:44:34Z",
  "sources": [
   {
    "id": "du",
@@ -11,7 +11,7 @@
    "ok": true,
    "found": 5,
    "new": 0,
-   "lastOk": "2026-11-24",
+   "lastOk": "2026-11-25",
    "primed": true
   },
   {
@@ -23,7 +23,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-24",
+   "lastOk": "2026-11-25",
    "primed": true
   },
   {
@@ -33,9 +33,9 @@
    "home": "https://www.pip.gov.pl/",
    "cat": "pip",
    "ok": true,
-   "found": 0,
+   "found": 8,
    "new": 0,
-   "lastOk": "2026-11-24",
+   "lastOk": "2026-11-25",
    "primed": true
   },
   {
@@ -46,8 +46,8 @@
    "cat": "wiedza",
    "ok": true,
    "found": 22,
-   "new": 6,
-   "lastOk": "2026-11-24",
+   "new": 0,
+   "lastOk": "2026-11-25",
    "primed": true
   },
   {
@@ -58,8 +58,8 @@
    "cat": "chemia",
    "ok": true,
    "found": 20,
-   "new": 6,
-   "lastOk": "2026-11-24",
+   "new": 0,
+   "lastOk": "2026-11-25",
    "primed": true
   },
   {
@@ -70,8 +70,8 @@
    "cat": "wiadomosci",
    "ok": true,
    "found": 15,
-   "new": 1,
-   "lastOk": "2026-11-24",
+   "new": 0,
+   "lastOk": "2026-11-25",
    "primed": true
   },
   {
@@ -83,7 +83,7 @@
    "ok": true,
    "found": 2,
    "new": 0,
-   "lastOk": "2026-11-24",
+   "lastOk": "2026-11-25",
    "primed": true
   },
   {
@@ -95,7 +95,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-24",
+   "lastOk": "2026-11-25",
    "primed": true
   },
   {
@@ -106,8 +106,8 @@
    "cat": "ue",
    "ok": true,
    "found": 10,
-   "new": 0,
-   "lastOk": "2026-11-24",
+   "new": 1,
+   "lastOk": "2026-11-25",
    "primed": true
   },
   {
@@ -119,11 +119,21 @@
    "ok": true,
    "found": 1,
    "new": 0,
-   "lastOk": "2026-11-24",
+   "lastOk": "2026-11-25",
    "primed": true
   }
  ],
  "items": [
+  {
+   "id": "fab611039bfe",
+   "src": "osha",
+   "cat": "ue",
+   "title": "8 August established as European day of remembrance for victims of accidents at work",
+   "lead": "The European Commission, European Parliament and Council signed a joint declaration on 24 November establishing a European day of remembrance for victims of accidents at work, to be observed annually on 8 August from 2027. The date commemorates the 1956 Bois du Cazier mining tragedy in Marcinelle, Belgium, in which…",
+   "url": "https://osha.europa.eu/en/oshnews/8-august-established-european-day-remembrance-victims-accidents-work",
+   "date": "2026-11-25",
+   "seen": "2026-11-25"
+  },
   {
    "id": "4bc99947ceb3",
    "src": "psp",
@@ -1708,6 +1718,7 @@
   "01bff9ed6f4a",
   "02b5607e1bca",
   "0553c1c5af34",
+  "0831d874b295",
   "0abd279aeb99",
   "0bd95bc0165e",
   "0cbf706acf28",
@@ -1789,9 +1800,11 @@
   "998530415097",
   "a112269fba9d",
   "a139ef0e16b8",
+  "a2df7b97f937",
   "a35cd1ee67b6",
   "a99416ba801e",
   "ad53b9786341",
+  "b0b7d986ce20",
   "b1183e20ca33",
   "b29de201aae1",
   "b5e013180f1c",
