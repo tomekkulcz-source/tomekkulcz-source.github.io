@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-25T14:44:34Z",
+ "generatedAt": "2026-11-26T14:09:16Z",
  "sources": [
   {
    "id": "du",
@@ -11,7 +11,7 @@
    "ok": true,
    "found": 5,
    "new": 0,
-   "lastOk": "2026-11-25",
+   "lastOk": "2026-11-26",
    "primed": true
   },
   {
@@ -23,7 +23,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-25",
+   "lastOk": "2026-11-26",
    "primed": true
   },
   {
@@ -34,8 +34,8 @@
    "cat": "pip",
    "ok": true,
    "found": 8,
-   "new": 0,
-   "lastOk": "2026-11-25",
+   "new": 2,
+   "lastOk": "2026-11-26",
    "primed": true
   },
   {
@@ -47,7 +47,7 @@
    "ok": true,
    "found": 22,
    "new": 0,
-   "lastOk": "2026-11-25",
+   "lastOk": "2026-11-26",
    "primed": true
   },
   {
@@ -59,7 +59,7 @@
    "ok": true,
    "found": 20,
    "new": 0,
-   "lastOk": "2026-11-25",
+   "lastOk": "2026-11-26",
    "primed": true
   },
   {
@@ -71,7 +71,7 @@
    "ok": true,
    "found": 15,
    "new": 0,
-   "lastOk": "2026-11-25",
+   "lastOk": "2026-11-26",
    "primed": true
   },
   {
@@ -83,7 +83,7 @@
    "ok": true,
    "found": 2,
    "new": 0,
-   "lastOk": "2026-11-25",
+   "lastOk": "2026-11-26",
    "primed": true
   },
   {
@@ -95,7 +95,7 @@
    "ok": true,
    "found": 0,
    "new": 0,
-   "lastOk": "2026-11-25",
+   "lastOk": "2026-11-26",
    "primed": true
   },
   {
@@ -106,8 +106,8 @@
    "cat": "ue",
    "ok": true,
    "found": 10,
-   "new": 1,
-   "lastOk": "2026-11-25",
+   "new": 0,
+   "lastOk": "2026-11-26",
    "primed": true
   },
   {
@@ -117,13 +117,53 @@
    "home": "https://www.gov.pl/web/kgpsp",
    "cat": "ppoz",
    "ok": true,
-   "found": 1,
-   "new": 0,
-   "lastOk": "2026-11-25",
+   "found": 3,
+   "new": 2,
+   "lastOk": "2026-11-26",
    "primed": true
   }
  ],
  "items": [
+  {
+   "id": "fb9412cccf7a",
+   "src": "pip",
+   "cat": "pip",
+   "title": "Bezpieczne dzieciństwo na wsi – wspólna troska o najmłodszych",
+   "lead": "2 grudnia 2026 r. na Uniwersytecie Kardynała Stefana Wyszyńskiego w Warszawie odbędzie się konferencja „Bezpieczne dzieciństwo na wsi – aspekty prawne i społeczne”. Wydarzenie, współorganizowane przez Państwową Inspekcję Pracy, będzie okazją do dyskusji o prawnej ochronie pracy dzieci, o tym, czy w gospodarstwach…",
+   "url": "https://www.pip.gov.pl/aktualnosci/bezpieczne-dziecinstwo-na-wsi-wspolna-troska-o-najmlodszych",
+   "date": "2026-11-26",
+   "seen": "2026-11-26"
+  },
+  {
+   "id": "b03715f251e3",
+   "src": "pip",
+   "cat": "pip",
+   "title": "Inspekcja nagradza za bezpieczeństwo w pracy",
+   "lead": "– Żadne zadanie nie jest tak ważne, by nie można go było wykonać bezpieczniej. To fundamentalne założenie, którym kierują się tegoroczni laureaci konkursu „Pracodawca – organizator pracy bezpiecznej” – powiedział Główny Inspektor Pracy Janusz Krasoń do laureatów konkursu oraz osób nagrodzonych za pracę na rzecz…",
+   "url": "https://www.pip.gov.pl/aktualnosci/inspekcja-nagradza-za-bezpieczenstwo-w-pracy",
+   "date": "2026-11-25",
+   "seen": "2026-11-26"
+  },
+  {
+   "id": "53680b81edc4",
+   "src": "psp",
+   "cat": "ppoz",
+   "title": "Obchody 45. rocznicy strajku podchorążych Wyższej Oficerskiej Szkoły Pożarniczej",
+   "lead": "",
+   "url": "https://www.gov.pl/web/kgpsp/obchody-45-rocznicy-strajku-podchorazych-wyzszej-oficerskiej-szkoly-pozarniczej",
+   "date": "2026-11-25",
+   "seen": "2026-11-26"
+  },
+  {
+   "id": "01d134d8dc4e",
+   "src": "psp",
+   "cat": "ppoz",
+   "title": "Ochrona przeciwpożarowa - najczęściej zadawane pytania",
+   "lead": "",
+   "url": "https://www.gov.pl/web/kgpsp/ochrona-przeciwpozarowa---najczesciej-zadawane-pytania",
+   "date": "2026-11-25",
+   "seen": "2026-11-26"
+  },
   {
    "id": "fab611039bfe",
    "src": "osha",
@@ -1775,6 +1815,7 @@
   "7205eb42b84a",
   "721417269f3b",
   "7242aad4938a",
+  "7273ebde5883",
   "736121b7a9a1",
   "739568795729",
   "745636c12381",
@@ -1847,6 +1888,7 @@
   "e775ca7fab23",
   "ea9be4be437b",
   "eb13b7798074",
+  "efe5f6d8577a",
   "effbff2c3049",
   "f6f25f62855b",
   "fa1badb1d4e7",
