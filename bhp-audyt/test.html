@@ -192,7 +192,7 @@
     } else {
       h += qs.map((q,i)=>{ const t = q[lg]; return '<div class="q"><h2><span class="n">'+(i+1)+'.</span>'+esc(t[0])+'</h2>'+order[i].map(k=>{ const cls = st.done ? (k===q.ok ? ' ok' : (st.ans[q.id]===k ? ' bad' : '')) : ''; return '<label class="a'+cls+'"><input type="radio" name="'+q.id+'" value="'+k+'"'+(st.ans[q.id]===k?' checked':'')+(st.done?' disabled':'')+'><span>'+esc(t[k+1])+'</span></label>'; }).join('')+'</div>'; }).join('');
       if(!st.done) h += '<button class="main" id="fin">'+esc(L.submit)+'</button>';
-      else { const s = score(), pct = Math.round(100*s/qs.length), ok = pct>=passPct;
+      else { const s = score(), pct = Math.round(100*s/qs.length), ok = 100*s/qs.length>=passPct;
         h += '<div class="res"><div>'+esc(L.res)+' — '+esc(st.name)+'</div><div class="score '+(ok?'pass':'fail')+'">'+s+' '+esc(L.of)+' '+qs.length+' ('+pct+'%)</div><div class="'+(ok?'pass':'fail')+'">'+esc(ok?L.pass:L.fail)+'</div><button class="main" id="snd">'+esc(L.send)+'</button><button class="sec" id="cpy">'+esc(L.copy)+'</button>'+(ok?'':'<button class="sec" id="rst">'+esc(L.again)+'</button>')+'<p class="note">'+esc(L.proof)+'</p></div>'; }
     }
     app.innerHTML = h;
@@ -208,7 +208,7 @@
     const now = new Date(), d = now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0')+'-'+String(now.getDate()).padStart(2,'0');
     const rec = {v:1, k:'tst', i:P.i||'', c:P.c||'', s:P.s, n:st.name, ps:st.pos, d, sc:s, t:qs.length, p:passPct, lg, a:qs.map(q=>st.ans[q.id])};
     const code = 'BHPT1:'+await pack(rec);
-    const text = [L.subj+' — '+(P.c||''), '', L.name+': '+st.name, L.pos+': '+(st.pos||'—'), T.pl.sets[P.s]+' ('+lg.toUpperCase()+')', d, L.res+': '+s+'/'+qs.length+' ('+pct+'%) — '+(pct>=passPct?L.pass:L.fail), '', L.code, code].join('\n');
+    const text = [L.subj+' — '+(P.c||''), '', L.name+': '+st.name, L.pos+': '+(st.pos||'—'), T.pl.sets[P.s]+' ('+lg.toUpperCase()+')', d, L.res+': '+s+'/'+qs.length+' ('+pct+'%) — '+(100*s/qs.length>=passPct?L.pass:L.fail), '', L.code, code].join('\n');
     return {text, subject:L.subj+' — '+st.name};
   }
   async function send(){ const b = await build(); if(!P.e){ await copy(); alert(T[lg].noTo); return; } location.href = 'mailto:'+encodeURIComponent(P.e)+'?subject='+encodeURIComponent(b.subject)+'&body='+encodeURIComponent(b.text); }
